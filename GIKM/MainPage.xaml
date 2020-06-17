@@ -1,16 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage Padding="0,20,0,0"
+             NavigationPage.HasNavigationBar="false"
+             xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:local1="clr-namespace:GIKM.MarkupExtensions"
+             BackgroundColor="{d:DynamicResource BackgroundColor}"
              mc:Ignorable="d"
              x:Class="GIKM.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Spacing="60">
+            <Image HeightRequest="240"
+                   WidthRequest="240"
+                   Aspect="AspectFit"
+                   Source="{local1:EmbeddedImage GIKM.Images.MuseumLogo.png}"
+                   x:Name="Image">
+            </Image>
+            <Label HorizontalTextAlignment="Center"
+                   Style="{StaticResource TitleText}"
+                   Text="Геленджикский историко-краеведческий музей" />
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

@@ -6,6 +6,34 @@
              mc:Ignorable="d"
              x:Class="GIKM.App">
     <Application.Resources>
+        <!-- Application color palette -->
+        <Color x:Key="BackgroundColor">#E4E4E4</Color>
+        <Color x:Key="LabelDarkRedColor">#990000</Color>
+        <Color x:Key="TextBlackColor">#000000</Color>
+        
+        <!-- Application defaults object -->
+        <OnPlatform x:Key="TextFontFamily" x:TypeArguments="x:String">
+            <On Platform="iOS" Value="Questrial" />
+            <On Platform="Android" Value="Questrial-Regular.ttf#Questrial" />
+        </OnPlatform>
+
+        <Style x:Key="TitleText" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource LabelDarkRedColor}" />
+            <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
+            <Setter Property="FontSize" Value="30" />
+        </Style>
+
+        <Style x:Key="SubTitleText" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource LabelDarkRedColor}" />
+            <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+
+        <Style x:Key="BodyText" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource TextBlackColor}" />
+            <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
+            <Setter Property="FontSize" Value="Medium" />
+        </Style>
 
     </Application.Resources>
 </Application>

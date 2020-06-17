@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Padding="0,20,0,0"
+             NavigationPage.HasNavigationBar="false"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:local="clr-namespace:GIKM.MarkupExtensions"
+             BackgroundColor="{d:DynamicResource BackgroundColor}"
+             mc:Ignorable="d"
+             x:Class="GIKM.Views.MenuPage">
+    <ScrollView>
+        <StackLayout Orientation="Vertical"
+                 BackgroundColor="{DynamicResource BackgroundColor}"
+                 Spacing="20">
+            <RelativeLayout HeightRequest="100" 
+                            BackgroundColor="{DynamicResource BackgroundColor}" 
+                            VerticalOptions="FillAndExpand"
+                            HorizontalOptions="FillAndExpand">
+
+                <Image Aspect="AspectFill"
+                           Source="{local:EmbeddedImage GIKM.Images.main_1.png}"
+                           x:Name="menu1"
+                           >
+                </Image>
+                <StackLayout HorizontalOptions="FillAndExpand" >
+                    <Label  Style="{StaticResource SubTitleText}"
+                            Text="О батарее № 394"
+                            VerticalTextAlignment="Center"
+                            HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+            </RelativeLayout>
+            <StackLayout Orientation="Horizontal" 
+                         HeightRequest="100" 
+                         BackgroundColor="{DynamicResource BackgroundColor}" 
+                         VerticalOptions="FillAndExpand">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMenuTap1"
+                                              NumberOfTapsRequired="1">
+
+                    </TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+
+                <Image Aspect="AspectFit"
+                           Source="{local:EmbeddedImage GIKM.Images.main_1.png}"
+                           x:Name="menu8"
+                           >
+                </Image>
+                <Label Style="{StaticResource SubTitleText}"
+                       Text="О батарее № 394" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" 
+                         BackgroundColor="{DynamicResource BackgroundColor}"  
+                         HeightRequest="100" 
+                         VerticalOptions="FillAndExpand" >
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMenuTap2"
+                                              NumberOfTapsRequired="1">
+
+                    </TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+
+                <Image Aspect="AspectFit"
+                           Source="{local:EmbeddedImage GIKM.Images.main_2.png}"
+                           x:Name="menu2"
+                           >
+                </Image>
+                <Label Style="{StaticResource SubTitleText}"
+                       Text="Карта батареи" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" 
+                         BackgroundColor="{DynamicResource BackgroundColor}"  
+                         HeightRequest="100" 
+                         VerticalOptions="FillAndExpand">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMenuTap3"
+                                              NumberOfTapsRequired="1">
+
+                    </TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+
+                <Image Aspect="AspectFit"
+                           Source="{local:EmbeddedImage GIKM.Images.main_3.png}"
+                           x:Name="menu3"
+                           >
+                </Image>
+                <Label Style="{StaticResource SubTitleText}"
+                       Text="Посетителям" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" 
+                         BackgroundColor="{DynamicResource BackgroundColor}"  
+                         HeightRequest="100" 
+                         VerticalOptions="FillAndExpand">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMenuTap4"
+                                              NumberOfTapsRequired="1">
+
+                    </TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+
+                <Image Aspect="AspectFit"
+                           Source="{local:EmbeddedImage GIKM.Images.main_4.png}"
+                           x:Name="menu4"
+                           >
+                </Image>
+                <Label Style="{StaticResource SubTitleText}"
+                       Text="Природа мыса Пенай" />
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

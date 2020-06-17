@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using GIKM.Views;
 
 namespace GIKM
 {
@@ -17,5 +18,13 @@ namespace GIKM
         {
             InitializeComponent();
         }
+        // 3 seconds delay and redirect to menu page
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
+            await Task.Delay(3000);
+            await this.Navigation.PushAsync(new MenuPage());
+        }
+
     }
 }
