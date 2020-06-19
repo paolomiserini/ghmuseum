@@ -10,7 +10,11 @@ namespace GIKM
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.FromHex("#CC0000"),
+                BarTextColor = Color.White
+            };
         }
 
         protected override void OnStart()

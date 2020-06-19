@@ -16,6 +16,7 @@
     <None Remove="Images\main_3.png" />
     <None Remove="Images\main_4.png" />
     <None Remove="Images\MuseumLogo.png" />
+    <None Remove="Images\museum_1.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,11 +25,13 @@
     <EmbeddedResource Include="Images\main_3.png" />
     <EmbeddedResource Include="Images\main_4.png" />
     <EmbeddedResource Include="Images\MuseumLogo.png" />
+    <EmbeddedResource Include="Images\museum_1.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.7.0.968" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.4.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,6 +46,12 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Views\MenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PgGikm.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\TPGikm.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

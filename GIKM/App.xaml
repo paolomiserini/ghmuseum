@@ -10,7 +10,11 @@
         <Color x:Key="BackgroundColor">#E4E4E4</Color>
         <Color x:Key="LabelDarkRedColor">#990000</Color>
         <Color x:Key="TextBlackColor">#000000</Color>
-        
+        <Color x:Key="TextWhite">#FFFFFF</Color>
+        <Color x:Key="TabBackgroundSelected">#990000</Color>
+        <Color x:Key="DarkRedColor">#990000</Color>
+
+
         <!-- Application defaults object -->
         <OnPlatform x:Key="TextFontFamily" x:TypeArguments="x:String">
             <On Platform="iOS" Value="Questrial" />
@@ -26,14 +30,33 @@
         <Style x:Key="SubTitleText" TargetType="Label">
             <Setter Property="TextColor" Value="{StaticResource LabelDarkRedColor}" />
             <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
-            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontSize" Value="16" />
         </Style>
 
         <Style x:Key="BodyText" TargetType="Label">
             <Setter Property="TextColor" Value="{StaticResource TextBlackColor}" />
             <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
-            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="LineBreakMode" Value="WordWrap" />
         </Style>
 
+        <Style x:Key="MenuText" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource TextWhite}" />
+            <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontAttributes" Value="Bold" />
+        </Style>
+        <!--  Common style for buttons  -->
+        <Style x:Key="SfButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{DynamicResource DarkRedColor}" />
+            <Setter Property="TextColor" Value="{DynamicResource TextWhite}" />
+            <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
+            <Setter Property="BorderWidth" Value="0" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="HeightRequest" Value="40" />
+            <Setter Property="CornerRadius" Value="20" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="WidthRequest" Value="80" />
+        </Style>
     </Application.Resources>
 </Application>

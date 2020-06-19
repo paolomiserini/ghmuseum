@@ -19,7 +19,7 @@ namespace GIKM.Views
 
         async void OnMenuTap1(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new TabbedPageAbout());
+            await Navigation.PushAsync(new TPGikm());
         }
 
         async void OnMenuTap2(object sender, EventArgs e)

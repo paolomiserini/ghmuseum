@@ -13,104 +13,96 @@
         <StackLayout Orientation="Vertical"
                  BackgroundColor="{DynamicResource BackgroundColor}"
                  Spacing="20">
+            <!--Menu' museo Tap gesture event 1 -->
             <RelativeLayout HeightRequest="100" 
-                            BackgroundColor="{DynamicResource BackgroundColor}" 
-                            VerticalOptions="FillAndExpand"
-                            HorizontalOptions="FillAndExpand">
+                            BackgroundColor="{DynamicResource BackgroundColor}" >
 
                 <Image Aspect="AspectFill"
-                           Source="{local:EmbeddedImage GIKM.Images.main_1.png}"
+                       Source="{local:EmbeddedImage GIKM.Images.main_4.png}"
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
                            x:Name="menu1"
                            >
                 </Image>
-                <StackLayout HorizontalOptions="FillAndExpand" >
-                    <Label  Style="{StaticResource SubTitleText}"
-                            Text="О батарее № 394"
-                            VerticalTextAlignment="Center"
-                            HorizontalOptions="CenterAndExpand"/>
-                </StackLayout>
+
+                <Label  Style="{StaticResource MenuText}"
+                        Text="Геленджикский историко-краеведческий музей"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=60}"
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=X, Factor=0, Constant=170}"
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=50}"
+                      />
+                <RelativeLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMenuTap1" NumberOfTapsRequired="1"></TapGestureRecognizer>
+                </RelativeLayout.GestureRecognizers>
 
             </RelativeLayout>
-            <StackLayout Orientation="Horizontal" 
-                         HeightRequest="100" 
-                         BackgroundColor="{DynamicResource BackgroundColor}" 
-                         VerticalOptions="FillAndExpand">
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnMenuTap1"
-                                              NumberOfTapsRequired="1">
+            
+            <!--Menu' Batteria Zubkova Tap gesture event 2 -->
+            <RelativeLayout HeightRequest="100" 
+                            BackgroundColor="{DynamicResource BackgroundColor}" >
 
-                    </TapGestureRecognizer>
-                </StackLayout.GestureRecognizers>
-
-                <Image Aspect="AspectFit"
-                           Source="{local:EmbeddedImage GIKM.Images.main_1.png}"
-                           x:Name="menu8"
-                           >
-                </Image>
-                <Label Style="{StaticResource SubTitleText}"
-                       Text="О батарее № 394" />
-            </StackLayout>
-
-            <StackLayout Orientation="Horizontal" 
-                         BackgroundColor="{DynamicResource BackgroundColor}"  
-                         HeightRequest="100" 
-                         VerticalOptions="FillAndExpand" >
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnMenuTap2"
-                                              NumberOfTapsRequired="1">
-
-                    </TapGestureRecognizer>
-                </StackLayout.GestureRecognizers>
-
-                <Image Aspect="AspectFit"
-                           Source="{local:EmbeddedImage GIKM.Images.main_2.png}"
+                <Image Aspect="AspectFill"
+                       Source="{local:EmbeddedImage GIKM.Images.main_3.png}"
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
                            x:Name="menu2"
                            >
                 </Image>
-                <Label Style="{StaticResource SubTitleText}"
-                       Text="Карта батареи" />
-            </StackLayout>
 
-            <StackLayout Orientation="Horizontal" 
-                         BackgroundColor="{DynamicResource BackgroundColor}"  
-                         HeightRequest="100" 
-                         VerticalOptions="FillAndExpand">
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnMenuTap3"
-                                              NumberOfTapsRequired="1">
+                <Label  Style="{StaticResource MenuText}"
+                        Text="Музей под открытым небом Батарея № 394 капитана Зубкова"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=60}"
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=X, Factor=0, Constant=10}"
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=50}"
+                      />
+                <RelativeLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMenuTap2"  NumberOfTapsRequired="1"></TapGestureRecognizer>
+                </RelativeLayout.GestureRecognizers>
 
-                    </TapGestureRecognizer>
-                </StackLayout.GestureRecognizers>
+            </RelativeLayout>
+            
+            <!--Menu' Sala espositiva Tap gesture event 3 -->
+            <RelativeLayout HeightRequest="100" 
+                            BackgroundColor="{DynamicResource BackgroundColor}" >
 
-                <Image Aspect="AspectFit"
-                           Source="{local:EmbeddedImage GIKM.Images.main_3.png}"
+                <Image Aspect="AspectFill"
+                       Source="{local:EmbeddedImage GIKM.Images.main_2.png}"
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
                            x:Name="menu3"
                            >
                 </Image>
-                <Label Style="{StaticResource SubTitleText}"
-                       Text="Посетителям" />
-            </StackLayout>
 
-            <StackLayout Orientation="Horizontal" 
-                         BackgroundColor="{DynamicResource BackgroundColor}"  
-                         HeightRequest="100" 
-                         VerticalOptions="FillAndExpand">
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnMenuTap4"
-                                              NumberOfTapsRequired="1">
+                <Label  Style="{StaticResource MenuText}"
+                        Text="Городской Выставочный Зал"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=70}"
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=X, Factor=0, Constant=170}"
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=40}"
+                      />
+                <RelativeLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMenuTap3"  NumberOfTapsRequired="1"></TapGestureRecognizer>
+                </RelativeLayout.GestureRecognizers>
 
-                    </TapGestureRecognizer>
-                </StackLayout.GestureRecognizers>
+            </RelativeLayout>
 
-                <Image Aspect="AspectFit"
-                           Source="{local:EmbeddedImage GIKM.Images.main_4.png}"
+            <!--Menu' casa korolenko Tap gesture event 4 -->
+            <RelativeLayout HeightRequest="100" 
+                            BackgroundColor="{DynamicResource BackgroundColor}" >
+
+                <Image Aspect="AspectFill"
+                       Source="{local:EmbeddedImage GIKM.Images.main_1.png}"
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
                            x:Name="menu4"
                            >
                 </Image>
-                <Label Style="{StaticResource SubTitleText}"
-                       Text="Природа мыса Пенай" />
-            </StackLayout>
 
+                <Label  Style="{StaticResource MenuText}"
+                        Text="Дом-музей В.Г. Короленко"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=70}"
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=X, Factor=0, Constant=10}"
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=50}"
+                      />
+                <RelativeLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMenuTap4"  NumberOfTapsRequired="1"></TapGestureRecognizer>
+                </RelativeLayout.GestureRecognizers>
+            </RelativeLayout>
         </StackLayout>
     </ScrollView>
 

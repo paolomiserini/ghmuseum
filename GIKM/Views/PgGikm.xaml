@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Padding="0,20,0,0"
+             Title="об ГИКМ"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:local="clr-namespace:GIKM.MarkupExtensions"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             BackgroundColor="{DynamicResource BackgroundColor}"
+             mc:Ignorable="d"
+             x:Class="GIKM.Views.PgGikm">
+
+    <StackLayout Orientation="Vertical"
+                 VerticalOptions="StartAndExpand"
+                 BackgroundColor="{DynamicResource BackgroundColor}"
+                 Spacing="15">
+
+        <RelativeLayout BackgroundColor="{StaticResource BackgroundColor}" 
+                        HorizontalOptions="CenterAndExpand"
+                        x:Name="pictureLayout">
+
+            <Image Aspect="AspectFill"
+                    Source="{local:EmbeddedImage GIKM.Images.museum_1.png}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" >
+            </Image>
+
+            <yummy:PancakeView BackgroundColor="LightGray"
+                               CornerRadius="30,0,0,30"
+                               HasShadow="False"
+                               HeightRequest="80"
+                               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width, Factor=1}"
+                               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Y,Factor=0,Constant=220}">
+                <Label Style="{StaticResource SubTitleText}"
+                       HorizontalTextAlignment="Center"
+                       Text="Геленджик, ул. Островского, 1" 
+                       Padding="20,30,20,30"/>
+
+            </yummy:PancakeView>
+        </RelativeLayout>
+
+        <StackLayout Orientation="Vertical" >
+
+            <ScrollView>
+                <StackLayout Padding="5,5,5,5">
+                    <Label Style="{StaticResource BodyText}">
+                        <Label.Text>
+                            Геленджикский историко-краеведческий музей является одним из лучших научных и культурных учреждений курорта. Был основан в 1909 году, как «Естественно-научный музей» Михаилом Михайловичем Рейнке, Тайным Советником и Старшим Чиновником Собственной Его Императорского Величества Канцелярии.
+&#10;Сегодня наш музей является хранителем материальной и духовной культуры нашего города и курорта. Геленджик известен своими уникальными природно-климатическими факторами, богатством растительного и животного мира – все эти особенности отражены в наших музейных коллекциях.
+&#10;Выставки: «Геленджичане в Первой Мировой войне» познакомит с личными предметами, фотодокументами участников этого великого и забытого события; «Курорт Геленджик в 30-40-е годы XX века» представит мирную жизнь нашего города и становление советского курорта Геленджик; «Роль и значение Геленджика в годы Великой Отечественной войны» познакомит с подлинными предметами, фотодокументальным фондом данного периода истории нашего города, так как Геленджикский историко-краеведческий музей является золотой летописью нашего города-курорта Геленджик.
+                        </Label.Text>
+                    </Label>
+
+                </StackLayout>
+            </ScrollView>
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
