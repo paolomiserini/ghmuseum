@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Padding="0,20,0,0"
+             Title="Мероприятий"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             mc:Ignorable="d"
+             x:Class="GIKM.Views.PgEventDetail"
+             x:Name="EventDetail">
+    <StackLayout Orientation="Vertical"
+                 VerticalOptions="StartAndExpand"
+                 BackgroundColor="{DynamicResource BackgroundColor}"
+                 Spacing="15">
+
+        <RelativeLayout BackgroundColor="{StaticResource BackgroundColor}" 
+                        HorizontalOptions="CenterAndExpand"
+                        x:Name="pictureLayout">
+
+            <Image  x:Name="imgTop"
+                    Aspect="AspectFill"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" >
+            </Image>
+            <!--Source="{Binding singleEvent.imageUrl}"-->
+
+            <yummy:PancakeView BackgroundColor="LightGray"
+                               CornerRadius="30,0,0,30"
+                               HasShadow="False"
+                               HeightRequest="80"
+                               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width, Factor=1}"
+                               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Y,Factor=0,Constant=225}">
+                <Label Style="{StaticResource SubTitleText}"
+                       HorizontalTextAlignment="Center"
+                       Text="{Binding singleEvent.Title}" 
+                       Padding="20,30,20,30"/>
+
+            </yummy:PancakeView>
+        </RelativeLayout>
+
+        <StackLayout Orientation="Vertical" 
+                     BackgroundColor="{StaticResource BackgroundColor}">
+
+            <ScrollView>
+                <StackLayout Padding="5,5,5,5">
+                    <Label Style="{StaticResource SubTitleText}"
+                           Text="{Binding singleEvent.Date}"
+                           LineBreakMode="WordWrap">
+                    </Label>
+                    <Label Style="{StaticResource BodyText}"
+                           Text="{Binding singleEvent.Description}"
+                           LineBreakMode="WordWrap">
+                    </Label>
+                    <Button Text="купить билеты" 
+                            Clicked="Button_Clicked_Buy"
+                            Style="{StaticResource SfButtonStyle}">
+                    </Button>
+                </StackLayout>
+            </ScrollView>
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -13,6 +13,8 @@
             x:Class="GIKM.Views.TPGikm">
     <!-- Descrizione museo -->
     <pages:PgGikm />
+    <!-- Pagina Eventi utilizzata da piu' pagine -->
+    <pages:PgEvents />
     <!--<ContentPage Title="Расписание" />
     <ContentPage Title="к добраться" />
     <ContentPage Title="билет" />-->

@@ -13,6 +13,8 @@
         <Color x:Key="TextWhite">#FFFFFF</Color>
         <Color x:Key="TabBackgroundSelected">#990000</Color>
         <Color x:Key="DarkRedColor">#990000</Color>
+        <Color x:Key="EventTitle">#990000</Color>
+       
 
 
         <!-- Application defaults object -->
@@ -46,6 +48,27 @@
             <Setter Property="FontSize" Value="18" />
             <Setter Property="FontAttributes" Value="Bold" />
         </Style>
+        
+        <!--  Style for list of events  -->
+
+        <Style x:Key="EventTitleText" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource LabelDarkRedColor}" />
+            <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
+            <Setter Property="FontSize" Value="16" />
+        </Style>
+
+        <Style x:Key="EventDataText" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource LabelDarkRedColor}" />
+            <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
+            <Setter Property="FontSize" Value="12" />
+        </Style>
+        <Style x:Key="EventBodyText" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource TextBlackColor}" />
+            <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="LineBreakMode" Value="WordWrap" />
+        </Style>
+
         <!--  Common style for buttons  -->
         <Style x:Key="SfButtonStyle" TargetType="Button">
             <Setter Property="BackgroundColor" Value="{DynamicResource DarkRedColor}" />

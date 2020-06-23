@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Padding="0,20,0,0"
+             Title="Мероприятий"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+             x:Class="GIKM.Views.PgEvents">
+    <ContentPage.Resources>
+        <DataTemplate x:Key="EventTemplate">
+            <ViewCell>
+                    <Grid BackgroundColor="{StaticResource BackgroundColor}"
+                      RowSpacing="2"
+                      Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Image Source="{Binding imageUrl}"
+                           Grid.Column="0"
+                           Grid.RowSpan="3"
+                           HorizontalOptions="Center"
+                           WidthRequest="80"
+                           HeightRequest="60">
+                    </Image>
+                    <Label Grid.Column="1"
+                           Grid.Row="0"
+                           Padding="0,0,0,0"
+                           Style="{StaticResource EventTitleText}" 
+                           Text="{Binding Title}">
+                    </Label>
+                    <Label Grid.Column="1"
+                           Grid.Row="1"
+                           Grid.ColumnSpan="2"
+                           Padding="0,0,0,0"
+                           Style="{StaticResource EventDataText}" 
+                           Text="{Binding Date}">
+                    </Label>
+                    <Label Grid.Column="1"
+                           Grid.Row="2"
+                           Grid.ColumnSpan="2"
+                           Padding="0,0,0,0"
+                           Style="{StaticResource EventBodyText}" 
+                           Text="{Binding ShortDescription}">
+                    </Label>
+                </Grid>
+            </ViewCell>
+        </DataTemplate>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <ListView x:Name="EventsList"
+                      ItemsSource="{Binding Events}"
+                      ItemTemplate="{StaticResource EventTemplate}"
+                      CachingStrategy="RecycleElement"
+                      HasUnevenRows="True"
+                      SelectionMode="Single"
+                      IsPullToRefreshEnabled="True"
+                      Refreshing="OnRefresh"
+                      ItemTapped="OnTap">
+                
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
