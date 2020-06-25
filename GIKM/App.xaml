@@ -34,7 +34,13 @@
             <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
             <Setter Property="FontSize" Value="16" />
         </Style>
-
+        
+        <Style x:Key="SubTitleTextOval" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource TextWhite}" />
+            <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
+            <Setter Property="FontSize" Value="16" />
+        </Style>
+        
         <Style x:Key="BodyText" TargetType="Label">
             <Setter Property="TextColor" Value="{StaticResource TextBlackColor}" />
             <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
