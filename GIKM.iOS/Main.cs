@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
-using ImageCircle.Forms.Plugin.iOS;
 using UIKit;
 
 namespace GIKM.iOS
