@@ -74,7 +74,7 @@ namespace GIKM.ViewModels
         {
             singleEvent.Title = "prova prova prova prova";
             singleEvent.ShortDescription = "description short";
-            singleEvent.Description = "Long Long Long Long Long &#10;Descrption proviamo a scrivere una cos molta lunga e&#10; vediamo che cosa succede per fare questa cosa";
+            singleEvent.Description = "Long Long Long Long Long &#10;Descrption proviamo a scrivere una cos molta lunga e&#10; vediamo che cosa succede per fare questa cosa deve eseere ancora molto piu lunga di quello che sembra perche altrimenti non se ne esce e non riesco a vedere come si formatta la stringa allinterno del coldice";
             singleEvent.Date = "01/01/2020-31/12/2020";
             singleEvent.id = _eventId;
             singleEvent.imageUrl = "http://www.paolomiserini.it/public/pic.jpg";

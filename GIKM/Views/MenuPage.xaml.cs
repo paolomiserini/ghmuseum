@@ -24,8 +24,7 @@ namespace GIKM.Views
 
         async void OnMenuTap2(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new Map());
-
+            await Navigation.PushAsync(new TPZubkov());
         }
         async void OnMenuTap3(object sender, EventArgs e)
         {

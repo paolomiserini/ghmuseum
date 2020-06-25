@@ -23,23 +23,21 @@
             <yummy:PancakeView BackgroundColor="LightGray"
                                CornerRadius="0,30,0,30"
                                HasShadow="False"
-                               HeightRequest="80"
+                               HeightRequest="30"
                                BackgroundGradientStartColor="DarkRed"
                                BackgroundGradientEndColor="Red"
                                BackgroundGradientAngle="45"
                                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" 
-                               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Y,Factor=0,Constant=200}"
                                >
 
                 <Label Style="{StaticResource SubTitleTextOval}"
                    HorizontalTextAlignment="Start"
                    Text="Геленджик, ул. Островского, 1" 
-                   Padding="10,30,20,30"
+                       Padding="10,5,0,0"
                    />
             </yummy:PancakeView>
 
-            <StackLayout RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Y,Factor=0,Constant=290}"
-                         Padding="5,5,5,5">
+            <StackLayout Padding="5,5,5,5">
                 <Label Style="{StaticResource BodyText}">
                     <Label.Text>
                         Геленджикский историко-краеведческий музей является одним из лучших научных и культурных учреждений курорта. Был основан в 1909 году, как «Естественно-научный музей» Михаилом Михайловичем Рейнке, Тайным Советником и Старшим Чиновником Собственной Его Императорского Величества Канцелярии.

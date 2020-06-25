@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Padding="0,20,0,0"
+             Title="об Батарея №394"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:local="clr-namespace:GIKM.MarkupExtensions"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             BackgroundColor="{DynamicResource BackgroundColor}"
+             mc:Ignorable="d"
+             x:Class="GIKM.Views.PgZubkov">
+
+    <ScrollView>
+        <StackLayout VerticalOptions="StartAndExpand"
+                    BackgroundColor="{DynamicResource BackgroundColor}">
+
+            <Image Aspect="AspectFill"
+               Source="{local:EmbeddedImage GIKM.Images.museum_1.png}"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" >
+            </Image>
+
+            <yummy:PancakeView BackgroundColor="LightGray"
+                               CornerRadius="0,30,0,30"
+                               HasShadow="False"
+                               HeightRequest="30"
+                               BackgroundGradientStartColor="DarkRed"
+                               BackgroundGradientEndColor="Red"
+                               BackgroundGradientAngle="45"
+                               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" 
+                               >
+
+                <Label Style="{StaticResource SubTitleTextOval}"
+                   HorizontalTextAlignment="Start"
+                   Text="Кабардинка,  1530 км ФАД М4" 
+                       Padding="10,5,0,0"
+                   />
+            </yummy:PancakeView>
+
+            <StackLayout Padding="5,5,5,5">
+                <Label Style="{StaticResource BodyText}">
+                    <Label.Text>
+                        На мысе Пенай в можжевеловом редколесье находится мемориальный комплекс, посвященный защитникам Цемесской бухты и порта Новороссийск в годы Великой Отечественной войны. Стационарная батарея № 394 1-го гвардейского артиллерийского дивизиона Новороссийской военно-морской базы ЧФ была самой близкой к линии фронта и самой результативной батареей береговой обороны.
+&#10;Батарея успешно уничтожала вражеские самолеты, танки, автомашины и живую силу противника, о чем свидетельствуют выдержки из фронтовой газеты «На страже», например: «…Как только на железнодорожную станцию прибыл эшелон с продовольствием и топливом, батарея Зубкова открыла уничтожающий огонь. Внезапным налетом гвардейцы разбили 5 вагонов и 4 повредили. В этом бою отличилось орудие гвардии мл.сержанта Зинченко». За точность и меткость стрельбы батарею называли «регулировщиком уличного движения в Новороссийске».
+&#10;На батарее установлены четыре 100 мм корабельных орудия, зенитная 85-мм. пушка, авиадвигатели советских истребителей, парогазовые торпеды и морская якорная мина. Несмотря на ожесточенные бои, когда противником было выпущено по батарее более 12 тысяч снарядов и авиабомб, здесь сохранились орудийные дворики, командный и химический посты, арт.погреба, где демонстрируются фотографии и предметы краснофлотцев-артиллеристов.
+&#10;Эти железобетонные сооружения, построенные в 1941 году, до сих пор впечатляют, как образец военной фортификации. Из книги отзывов: «Восхищён и поражён героизмом своих предков. Непременно приведу сюда своих сыновей. С уважением, гв.майор запаса Ячевский А.А. из г.Калуга», «Мы прожили и пропустили через свои сердца те страшные военные дни. В наши дни экспозиция необходима и наглядна для подрастающего поколения, чтобы помнили о предках. Светлана и Ольга с детьми Вероникой и Дмитрием».
+&#10;Музей под открытым небом «Батарея № 394 капитана А.Э. Зубкова» находится на федеральной трассе М-4 «Дон» между г. Новороссийск и с. Кабардинка.
+                    </Label.Text>
+                </Label>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
