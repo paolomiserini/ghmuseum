@@ -20,32 +20,50 @@
                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" >
             </Image>
 
-            <yummy:PancakeView BackgroundColor="LightGray"
-                               CornerRadius="0,30,0,30"
+            <StackLayout Padding="5,0,5,0">
+                <Frame BorderColor="{StaticResource DarkRedColor}"
+                       BackgroundColor="{StaticResource BackgroundColor}"
+                   CornerRadius="5"
+                   Padding="0,0,0,0">
+                    <StackLayout>
+                        <yummy:PancakeView BackgroundColor="LightGray"
                                HasShadow="False"
                                HeightRequest="30"
                                BackgroundGradientStartColor="DarkRed"
                                BackgroundGradientEndColor="Red"
                                BackgroundGradientAngle="45"
-                               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" 
                                >
-
-                <Label Style="{StaticResource SubTitleTextOval}"
-                   HorizontalTextAlignment="Start"
-                   Text="Геленджик, ул. Островского, 1" 
-                       Padding="10,5,0,0"
-                   />
-            </yummy:PancakeView>
-
-            <StackLayout Padding="5,5,5,5">
-                <Label Style="{StaticResource BodyText}">
-                    <Label.Text>
-                        Геленджикский историко-краеведческий музей является одним из лучших научных и культурных учреждений курорта. Был основан в 1909 году, как «Естественно-научный музей» Михаилом Михайловичем Рейнке, Тайным Советником и Старшим Чиновником Собственной Его Императорского Величества Канцелярии.
+                            <Label Style="{StaticResource SubTitleTextOval}"
+                                    HorizontalTextAlignment="Start"
+                                    Text="Геленджик, ул. Островского, 1" 
+                                    Padding="10,5,0,0" />
+                        </yummy:PancakeView>
+                        <Label Style="{StaticResource BodyText}"
+                           Padding="5,0,5,0">
+                            <Label.Text>
+                                Геленджикский историко-краеведческий музей является одним из лучших научных и культурных учреждений курорта. Был основан в 1909 году, как «Естественно-научный музей» Михаилом Михайловичем Рейнке, Тайным Советником и Старшим Чиновником Собственной Его Императорского Величества Канцелярии.
 &#10;Сегодня наш музей является хранителем материальной и духовной культуры нашего города и курорта. Геленджик известен своими уникальными природно-климатическими факторами, богатством растительного и животного мира – все эти особенности отражены в наших музейных коллекциях.
 &#10;Выставки: «Геленджичане в Первой Мировой войне» познакомит с личными предметами, фотодокументами участников этого великого и забытого события; «Курорт Геленджик в 30-40-е годы XX века» представит мирную жизнь нашего города и становление советского курорта Геленджик; «Роль и значение Геленджика в годы Великой Отечественной войны» познакомит с подлинными предметами, фотодокументальным фондом данного периода истории нашего города, так как Геленджикский историко-краеведческий музей является золотой летописью нашего города-курорта Геленджик.
-                    </Label.Text>
-                </Label>
+                            </Label.Text>
+                        </Label>
+                        <StackLayout Padding="5,0,5,10">
+                            <Frame BorderColor="LightGray"
+                                   BackgroundColor="{StaticResource BackgroundColor}" 
+                                   >
+                                <Label Style="{StaticResource InfoText}" >
+                                    <Label.Text>
+                                        Время работы с 9.00 до 22.00 часов
+&#10;Телефон для справок: 8(86141)2136
+&#10;Посещение и экскурсии по предварительной записи по телефону 8(928)4004718
+                                    </Label.Text>
+                                </Label>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                    
+                </Frame>
             </StackLayout>
         </StackLayout>
     </ScrollView>
+
 </ContentPage>

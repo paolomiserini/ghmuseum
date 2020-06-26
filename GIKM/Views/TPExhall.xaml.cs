@@ -11,12 +11,12 @@ using Xamarin.Forms.Xaml;
 namespace GIKM.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TPGikm : TabbedPage
+    public partial class TPExhall : TabbedPage
     {
-        public TPGikm()
+        public TPExhall()
         {
             InitializeComponent();
-            BindingContext = new EventsList(AppResource.ResourceManager.GetString("GIKM"));
+            BindingContext = new EventsList(AppResource.ResourceManager.GetString("CEHA"));
         }
     }
 }

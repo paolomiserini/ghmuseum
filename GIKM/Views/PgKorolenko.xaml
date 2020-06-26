@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Padding="0,20,0,0"
+             Title="об Дом-музей В.Г.К."
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:local="clr-namespace:GIKM.MarkupExtensions"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             BackgroundColor="{DynamicResource BackgroundColor}"
+             mc:Ignorable="d"
+             x:Class="GIKM.Views.PgKorolenko">
+
+    <ScrollView>
+        <StackLayout VerticalOptions="StartAndExpand"
+                    BackgroundColor="{DynamicResource BackgroundColor}">
+
+            <Image Aspect="AspectFill"
+               Source="{local:EmbeddedImage GIKM.Images.museum_1.png}"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" >
+            </Image>
+
+            <StackLayout Padding="5,0,5,0">
+                <Frame BorderColor="{StaticResource DarkRedColor}"
+                   BackgroundColor="{StaticResource BackgroundColor}"
+                   CornerRadius="5"
+                   Padding="0,0,0,0">
+                    <StackLayout>
+                        <yummy:PancakeView BackgroundColor="LightGray"
+                               HasShadow="False"
+                               HeightRequest="30"
+                               BackgroundGradientStartColor="DarkRed"
+                               BackgroundGradientEndColor="Red"
+                               BackgroundGradientAngle="45"
+                               >
+                            <Label Style="{StaticResource SubTitleTextOval}"
+                                HorizontalTextAlignment="Start"
+                                Text="Хутор Джанхот,  дача В.Г.Короленко" 
+                                Padding="10,5,0,0" />
+                        </yummy:PancakeView>
+
+                        <Label Style="{StaticResource BodyText}"
+                           Padding="5,0,5,0">
+                            <Label.Text>
+                                «Дом-музей Владимира Галактионовича Короленко» расположенный в хуторе Джанхот, в двадцати километрах от города-курорта Геленджик – единственный в Российской Федерации литературный музей писателя-гуманиста и правозащитника, являет собой уникальный мемориально-архитектурный усадебный комплекс конца XIX начала XX веков, окружённый со всех сторон заповедным бором реликтовой пицундской сосны.
+&#10;В 1898 году, по совету кубанского историка Ф.А. Щербины, писатель прибыл в Данхотское ущелье, чтобы выбрать место для основания усадьбы. А 1899 году Илларионом Галактионовичем Короленко, младшим братом писателя, был приобретен земельный участок в Джанхоте.
+&#10;В 1901-1902 г.г. на склоне горы был построен двухэтажный каменный дом с верандами, балконами и мансардой. Проект и эскизы двухэтажного усадебного дома были сделаны самим писателем.
+&#10;Именно здесь, в Джанхотской усадьбе, В. Г. Короленко были написаны воспоминания об А. П. Чехове и Н. Г. Чернышевском, многочисленные статьи для публикации в журналах «Русское богатство», «Современные записки», «Русские записки» и т. д., он работал над рассказом «Без языка» и этнографическим очерком «У казаков».
+&#10;На территории усадьбы произрастает ливанский кедр, имеющий статус особо охраняемого памятника ботаники. В возрасте тридцати лет Ливанский кедр из Крыма был доставлен в Джанхотское ущелье и в 1901-м году был высажен И. Г. Короленко. В настоящий момент ему более ста лет.
+&#10;До конца своих дней писатель с благодарностью вспоминал Джанхот и отдых у брата с семьей, как самые счастливые мгновения в своей жизни.</Label.Text>
+                        </Label>
+                        <StackLayout Padding="5,0,5,10">
+                            <Frame BorderColor="LightGray"
+                                   BackgroundColor="{StaticResource BackgroundColor}" 
+                                   >
+                                <Label Style="{StaticResource InfoText}" >
+                                    <Label.Text>
+                                        ежедневно: с 9.00 до 18.00 (касса до 17.15)
+&#10;Телефон для справок: +7 (928)4004717
+                                    </Label.Text>
+                                </Label>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

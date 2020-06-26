@@ -12,7 +12,6 @@ namespace GIKM.Views
         public PgEvents()
         {
             InitializeComponent();
-            BindingContext = new EventsList("GIKM");
         }
 
         void OnTap(object sender, ItemTappedEventArgs e)
@@ -23,8 +22,14 @@ namespace GIKM.Views
 
         void OnRefresh(object sender, EventArgs e)
         {
+            var _formActive = new Event();
             var list = (ListView)sender;
-            BindingContext = new EventsList("GIKM");
+            foreach (var item in list.ItemsSource)
+            {
+                _formActive = (Event)item;
+                break;
+            }
+            BindingContext = new EventsList(_formActive.formType);
 
             //make sure to end the refresh state
             list.IsRefreshing = false;

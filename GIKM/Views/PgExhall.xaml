@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Padding="0,20,0,0"
+             Title="об Гор. выставочный зал"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:local="clr-namespace:GIKM.MarkupExtensions"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             BackgroundColor="{DynamicResource BackgroundColor}"
+             mc:Ignorable="d"
+             x:Class="GIKM.Views.PgExhall">
+
+    <ScrollView>
+        <StackLayout VerticalOptions="StartAndExpand"
+                    BackgroundColor="{DynamicResource BackgroundColor}">
+
+            <Image Aspect="AspectFill"
+               Source="{local:EmbeddedImage GIKM.Images.museum_1.png}"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" >
+            </Image>
+
+            <StackLayout Padding="5,0,5,0">
+                <Frame BorderColor="{StaticResource DarkRedColor}"
+                   BackgroundColor="{StaticResource BackgroundColor}"
+                   CornerRadius="5"
+                   Padding="0,0,0,0">
+                    <StackLayout>
+                        <yummy:PancakeView BackgroundColor="LightGray"
+                               HasShadow="False"
+                               HeightRequest="30"
+                               BackgroundGradientStartColor="DarkRed"
+                               BackgroundGradientEndColor="Red"
+                               BackgroundGradientAngle="45"
+                               >
+                            <Label Style="{StaticResource SubTitleTextOval}"
+                                HorizontalTextAlignment="Start"
+                                Text="Геленджик ул. Остовского, 16" 
+                                Padding="10,5,0,0" />
+                        </yummy:PancakeView>
+
+                        <Label Style="{StaticResource BodyText}"
+                           Padding="5,0,5,0">
+                            <Label.Text>
+                                В самом сердце нашего города, в его историческом центре, в тени платановой аллеи расположился Городской выставочный зал, место, где живет искусство. Основные задачи Городского выставочного зала — содействие развитию творческого потенциала художников города-курорта, популяризация искусства Краснодарского края и России, развитие международных культурных связей и формирование у зрителей, особенно у подрастающего поколения, художественного вкуса и креативного мышления.
+&#10;В Городском выставочном зале регулярно проходят встречи с местными художниками, мастерами декоративно-прикладного искусства, лекции по искусству, творческие мастерские для взрослых и детей и культурно-массовые мероприятия.
+&#10;Из года в год Городской выставочный зал участвует в акции, посвященной Международному дню музеев, «Ночь музеев» и во Всероссийской культурно-образовательной акции «Ночь искусств».
+При планировании выставочной деятельности уделяется внимание соотношению числа выставок профессиональных и любительских объединений. Городской выставочный зал предоставляет площади для отчетных выставок детских школ искусств и художественных кружков в школах и дошкольных учреждениях города-курорта.
+&#10;В Геленджике сложился определенный цикл культурно-массовых мероприятий. Все они создают неповторимую атмосферу «города-праздника» и формируют его позитивный имидж. «Городской выставочный зал» в своей деятельности также ориентирован на формирование привлекательности нашего города-курорта. В связи с этим выставочные проекты организуются, как на основе собственных художественных сил города-курорта, так и с привлечением ведущих художников Краснодарского края и России.
+&#10;Выставочный зал проводит различные выставочные проекты с юридическими лицами и частными коллекционерами, имеет творческие контакты с музеями и частными галереями и приглашает к взаимовыгодному сотрудничеству потенциальных партнеров по организации новых художественных проектов, совместных передвижных, персональных и коммерческих выставок, проведению презентаций и культурных программ.
+&#10;В первом зале городского выставочного зала работает постоянная галерейная экспозиция: выставка-продажа  работ профессиональных художников Геленджика.
+                            </Label.Text>
+                        </Label>
+                        <StackLayout Padding="5,0,5,10">
+                            <Frame BorderColor="LightGray"
+                                   BackgroundColor="{StaticResource BackgroundColor}" 
+                                   >
+                                <Label Style="{StaticResource InfoText}" >
+                                    <Label.Text>
+                                        Время работы вт-вс . с 11.00 до 20.00 - чт. с 11.00 до 21.00
+&#10;Телефон для справок:  (86141) 3-32-98, (918)668-74-02
+                                    </Label.Text>
+                                </Label>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

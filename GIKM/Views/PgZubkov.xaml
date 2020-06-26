@@ -20,25 +20,27 @@
                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" >
             </Image>
 
-            <yummy:PancakeView BackgroundColor="LightGray"
-                               CornerRadius="15,15,0,0"
+            <StackLayout Padding="5,0,5,0">
+            <Frame BorderColor="{StaticResource DarkRedColor}"
+                   BackgroundColor="{StaticResource BackgroundColor}"
+                   CornerRadius="5"
+                   Padding="0,0,0,0">
+                <StackLayout>
+                    <yummy:PancakeView BackgroundColor="LightGray"
                                HasShadow="False"
                                HeightRequest="30"
                                BackgroundGradientStartColor="DarkRed"
                                BackgroundGradientEndColor="Red"
                                BackgroundGradientAngle="45"
-                               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" 
                                >
-
-                <Label Style="{StaticResource SubTitleTextOval}"
-                   HorizontalTextAlignment="Start"
-                   Text="Кабардинка,  1530 км ФАД М4" 
-                       Padding="10,5,0,0"
-                   />
-            </yummy:PancakeView>
-
-            <StackLayout Padding="5,5,5,5">
-                <Label Style="{StaticResource BodyText}">
+                        <Label Style="{StaticResource SubTitleTextOval}"
+                                HorizontalTextAlignment="Start"
+                                Text="Кабардинка,  1530 км ФАД М4" 
+                                Padding="10,5,0,0" />
+                    </yummy:PancakeView>
+                    
+                    <Label Style="{StaticResource BodyText}"
+                           Padding="5,0,5,0">
                     <Label.Text>
                         На мысе Пенай в можжевеловом редколесье находится мемориальный комплекс, посвященный защитникам Цемесской бухты и порта Новороссийск в годы Великой Отечественной войны. Стационарная батарея № 394 1-го гвардейского артиллерийского дивизиона Новороссийской военно-морской базы ЧФ была самой близкой к линии фронта и самой результативной батареей береговой обороны.
 &#10;Батарея успешно уничтожала вражеские самолеты, танки, автомашины и живую силу противника, о чем свидетельствуют выдержки из фронтовой газеты «На страже», например: «…Как только на железнодорожную станцию прибыл эшелон с продовольствием и топливом, батарея Зубкова открыла уничтожающий огонь. Внезапным налетом гвардейцы разбили 5 вагонов и 4 повредили. В этом бою отличилось орудие гвардии мл.сержанта Зинченко». За точность и меткость стрельбы батарею называли «регулировщиком уличного движения в Новороссийске».
@@ -47,7 +49,21 @@
 &#10;Музей под открытым небом «Батарея № 394 капитана А.Э. Зубкова» находится на федеральной трассе М-4 «Дон» между г. Новороссийск и с. Кабардинка.
                     </Label.Text>
                 </Label>
-            </StackLayout>
+                        <StackLayout Padding="5,0,5,10">
+                            <Frame BorderColor="LightGray"
+                                   BackgroundColor="{StaticResource BackgroundColor}" 
+                                   >
+                                <Label Style="{StaticResource InfoText}" >
+                                    <Label.Text>
+                                        ежедневно: с 9.00 до 18.00
+&#10;Телефон для справок: +7 (928)239-42-28
+                                    </Label.Text>
+                                </Label>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+            </Frame>
+        </StackLayout>
         </StackLayout>
     </ScrollView>
 </ContentPage>

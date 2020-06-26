@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using GIKM.ViewModels;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -15,12 +11,7 @@ namespace GIKM.Views
         public TPZubkov()
         {
             InitializeComponent();
-        }
-
-        private void CurrentPageHasChanged(object sender, EventArgs e)
-        {
-            var tabbedPage = (TabbedPage)sender;
-            Title = tabbedPage.CurrentPage.Title;
+            BindingContext = new EventsList(AppResource.ResourceManager.GetString("ZUBK"));
         }
     }
 }

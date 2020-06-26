@@ -28,11 +28,11 @@ namespace GIKM.Views
         }
         async void OnMenuTap3(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new TabbedPageVisitors());
+            await Navigation.PushAsync(new TPExhall());
         }
         async void OnMenuTap4(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new Nature());
+            await Navigation.PushAsync(new TPKorolenko());
 
         }
 

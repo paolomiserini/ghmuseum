@@ -1,5 +1,4 @@
-﻿using GIKM.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace GIKM.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TPGikm : TabbedPage
+    public partial class PgKorolenko : ContentPage
     {
-        public TPGikm()
+        public PgKorolenko()
         {
             InitializeComponent();
-            BindingContext = new EventsList(AppResource.ResourceManager.GetString("GIKM"));
         }
     }
 }

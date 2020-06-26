@@ -17,44 +17,47 @@
                     Aspect="AspectFill"
                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" >
             </Image>
-
-            <yummy:PancakeView BackgroundColor="LightGray"
-                               CornerRadius="0,30,0,30"
+            
+            <StackLayout Padding="5,0,5,0">
+                <Frame BorderColor="{StaticResource DarkRedColor}"
+                        BackgroundColor="{StaticResource BackgroundColor}"
+                        CornerRadius="5"
+                        Padding="0,0,0,0">
+                    <StackLayout>
+                        <yummy:PancakeView BackgroundColor="LightGray"
                                HasShadow="False"
                                HeightRequest="30"
                                BackgroundGradientStartColor="DarkRed"
                                BackgroundGradientEndColor="Red"
                                BackgroundGradientAngle="45"
-                               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" 
-                               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Y,Factor=0,Constant=180}"
                                >
-                <Label Style="{StaticResource SubTitleTextOval }"
-                       HorizontalTextAlignment="Start"
-                       Text="{Binding singleEvent.Title}" 
-                       Padding="10,5,0,0"/>
+                            <Label Style="{StaticResource SubTitleTextOval }"
+                                    HorizontalTextAlignment="Start"
+                                    Text="{Binding singleEvent.Title}" 
+                                    Padding="10,5,0,0"/>
 
-            </yummy:PancakeView>
-
-            <StackLayout Orientation="Vertical" 
-                         BackgroundColor="{StaticResource BackgroundColor}"
-                         Padding="5,5,5,5">
+                        </yummy:PancakeView>
                         <Label Style="{StaticResource SubTitleText}"
-                           Text="{Binding singleEvent.Date}"
-                           LineBreakMode="WordWrap">
+                                Text="{Binding singleEvent.Date}"
+                                LineBreakMode="WordWrap"
+                                Padding="5,0,0,0">
                         </Label>
                         <Label Style="{StaticResource BodyText}"
-                           Text="{Binding singleEvent.Description}"
-                           LineBreakMode="WordWrap">
+                                Text="{Binding singleEvent.Description}"
+                                LineBreakMode="WordWrap"
+                                Padding="5,0,0,0">
                         </Label>
-                <StackLayout Orientation="Horizontal"
-                              HorizontalOptions="Center"
-                             Padding="0,10,0,10"
-                             >
-                        <Button Text="купить билеты" 
-                            Clicked="Button_Clicked_Buy"
-                            Style="{StaticResource SfButtonStyle}">
-                        </Button>
-                </StackLayout>
+                        <StackLayout Orientation="Horizontal"
+                                    HorizontalOptions="Center"
+                                    Padding="0,10,0,10" >
+                            
+                            <Button Text="купить билеты" 
+                                    Clicked="Button_Clicked_Buy"
+                                    Style="{StaticResource SfButtonStyle}">
+                            </Button>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
             </StackLayout>
         </StackLayout>
     </ScrollView>
