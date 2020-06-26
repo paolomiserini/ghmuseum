@@ -21,7 +21,7 @@
             </Image>
 
             <yummy:PancakeView BackgroundColor="LightGray"
-                               CornerRadius="0,30,0,30"
+                               CornerRadius="15,15,0,0"
                                HasShadow="False"
                                HeightRequest="30"
                                BackgroundGradientStartColor="DarkRed"
