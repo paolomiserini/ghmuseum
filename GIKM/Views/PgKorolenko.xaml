@@ -49,19 +49,17 @@
 &#10;На территории усадьбы произрастает ливанский кедр, имеющий статус особо охраняемого памятника ботаники. В возрасте тридцати лет Ливанский кедр из Крыма был доставлен в Джанхотское ущелье и в 1901-м году был высажен И. Г. Короленко. В настоящий момент ему более ста лет.
 &#10;До конца своих дней писатель с благодарностью вспоминал Джанхот и отдых у брата с семьей, как самые счастливые мгновения в своей жизни.</Label.Text>
                         </Label>
- 
+
                         <StackLayout 
-                            HorizontalOptions="Center">
-                            <Label Text="&#xf05a;" 
-                                   Style="{StaticResource LblFontAwesomeSol}"
-                                   HeightRequest="80"
-                                   FontSize="60"
-                                   
+                            HorizontalOptions="Center" Padding="0,10,0,20">
+                            <Image MinimumHeightRequest="100"
+                                   Source="{local:EmbeddedImage GIKM.Images.icons8-info-100.png}"
                                    >
-                                <Label.GestureRecognizers>
+                                <Image.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
-                                </Label.GestureRecognizers>
-                            </Label>
+                                </Image.GestureRecognizers>
+                            </Image>
+
                         </StackLayout>
                     </StackLayout>
                 </Frame>

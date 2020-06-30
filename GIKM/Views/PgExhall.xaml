@@ -51,19 +51,17 @@
 &#10;В первом зале городского выставочного зала работает постоянная галерейная экспозиция: выставка-продажа  работ профессиональных художников Геленджика.
                             </Label.Text>
                         </Label>
- 
+
                         <StackLayout 
-                            HorizontalOptions="Center">
-                            <Label Text="&#xf05a;" 
-                                   Style="{StaticResource LblFontAwesomeSol}"
-                                   HeightRequest="80"
-                                   FontSize="60"
-                                   
+                            HorizontalOptions="Center" Padding="0,10,0,20">
+                            <Image MinimumHeightRequest="100"
+                                   Source="{local:EmbeddedImage GIKM.Images.icons8-info-100.png}"
                                    >
-                                <Label.GestureRecognizers>
+                                <Image.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
-                                </Label.GestureRecognizers>
-                            </Label>
+                                </Image.GestureRecognizers>
+                            </Image>
+
                         </StackLayout>
                     </StackLayout>
                 </Frame>

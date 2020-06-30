@@ -56,16 +56,7 @@
                                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
                                 </Image.GestureRecognizers>
                             </Image>
-                            <!--<Label Text="&#xf05a;" 
-                                   Style="{StaticResource LblFontAwesomeSol}"
-                                   HeightRequest="80"
-                                   FontSize="60"
-                                   
-                                   >
-                                <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
-                                </Label.GestureRecognizers>
-                            </Label>-->
+ 
                         </StackLayout>
                     </StackLayout>
                     

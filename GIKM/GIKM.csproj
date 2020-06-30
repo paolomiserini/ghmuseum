@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <None Remove="Images\icons8-info-100.png" />
+    <None Remove="Images\icons8-two-tickets-100.png" />
     <None Remove="Images\main_1.png" />
     <None Remove="Images\main_2.png" />
     <None Remove="Images\main_3.png" />
@@ -22,6 +23,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Images\icons8-info-100.png" />
+    <EmbeddedResource Include="Images\icons8-two-tickets-100.png" />
     <EmbeddedResource Include="Images\main_1.png" />
     <EmbeddedResource Include="Images\main_2.png" />
     <EmbeddedResource Include="Images\main_3.png" />
