@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Rg.Plugins.Popup.Extensions;
+using Rg.Plugins.Popup.Interfaces.Animations;
+using Rg.Plugins.Popup.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using GIKM.ViewModels;
 
 namespace GIKM.Views
 {
@@ -17,9 +20,15 @@ namespace GIKM.Views
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
+            var _pagetoopen = new PUpPage(AppConstants.GIKM);
+            OpenPopUp(_pagetoopen);
+        }
 
+        private async void OpenPopUp(PopupPage _page)
+        {
+            await Navigation.PushPopupAsync(_page);
         }
     }
 }

@@ -16,7 +16,7 @@ namespace GIKM.Views
         public TPExhall()
         {
             InitializeComponent();
-            BindingContext = new EventsList(AppResource.ResourceManager.GetString("CEHA"));
+            BindingContext = new EventsList(AppConstants.CEHA);
         }
     }
 }

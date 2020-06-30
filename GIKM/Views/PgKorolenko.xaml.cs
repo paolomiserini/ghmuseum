@@ -1,4 +1,7 @@
-﻿using System;
+﻿using GIKM.ViewModels;
+using Rg.Plugins.Popup.Extensions;
+using Rg.Plugins.Popup.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +18,16 @@ namespace GIKM.Views
         public PgKorolenko()
         {
             InitializeComponent();
+        }
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            var _pagetoopen = new PUpPage(AppConstants.DOMK);
+            OpenPopUp(_pagetoopen);
+        }
+
+        private async void OpenPopUp(PopupPage _page)
+        {
+            await Navigation.PushPopupAsync(_page);
         }
     }
 }

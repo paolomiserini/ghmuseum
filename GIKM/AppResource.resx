@@ -117,16 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CEHA" xml:space="preserve">
-    <value>CEHA</value>
-  </data>
-  <data name="DOMK" xml:space="preserve">
-    <value>DOMK</value>
-  </data>
-  <data name="GIKM" xml:space="preserve">
-    <value>GIKM</value>
-  </data>
-  <data name="ZUBK" xml:space="preserve">
-    <value>ZUBK</value>
-  </data>
 </root>

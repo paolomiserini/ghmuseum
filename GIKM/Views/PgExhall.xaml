@@ -51,17 +51,19 @@
 &#10;В первом зале городского выставочного зала работает постоянная галерейная экспозиция: выставка-продажа  работ профессиональных художников Геленджика.
                             </Label.Text>
                         </Label>
-                        <StackLayout Padding="5,0,5,10">
-                            <Frame BorderColor="LightGray"
-                                   BackgroundColor="{StaticResource BackgroundColor}" 
+ 
+                        <StackLayout 
+                            HorizontalOptions="Center">
+                            <Label Text="&#xf05a;" 
+                                   Style="{StaticResource LblFontAwesomeSol}"
+                                   HeightRequest="80"
+                                   FontSize="60"
+                                   
                                    >
-                                <Label Style="{StaticResource InfoText}" >
-                                    <Label.Text>
-                                        Время работы вт-вс . с 11.00 до 20.00 - чт. с 11.00 до 21.00
-&#10;Телефон для справок:  (86141) 3-32-98, (918)668-74-02
-                                    </Label.Text>
-                                </Label>
-                            </Frame>
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                                </Label.GestureRecognizers>
+                            </Label>
                         </StackLayout>
                     </StackLayout>
                 </Frame>

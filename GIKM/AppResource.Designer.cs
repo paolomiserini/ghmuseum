@@ -59,41 +59,5 @@ namespace GIKM {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to CEHA.
-        /// </summary>
-        internal static string CEHA {
-            get {
-                return ResourceManager.GetString("CEHA", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to DOMK.
-        /// </summary>
-        internal static string DOMK {
-            get {
-                return ResourceManager.GetString("DOMK", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to GIKM.
-        /// </summary>
-        internal static string GIKM {
-            get {
-                return ResourceManager.GetString("GIKM", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ZUBK.
-        /// </summary>
-        internal static string ZUBK {
-            get {
-                return ResourceManager.GetString("ZUBK", resourceCulture);
-            }
-        }
     }
 }

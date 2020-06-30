@@ -49,17 +49,19 @@
 &#10;На территории усадьбы произрастает ливанский кедр, имеющий статус особо охраняемого памятника ботаники. В возрасте тридцати лет Ливанский кедр из Крыма был доставлен в Джанхотское ущелье и в 1901-м году был высажен И. Г. Короленко. В настоящий момент ему более ста лет.
 &#10;До конца своих дней писатель с благодарностью вспоминал Джанхот и отдых у брата с семьей, как самые счастливые мгновения в своей жизни.</Label.Text>
                         </Label>
-                        <StackLayout Padding="5,0,5,10">
-                            <Frame BorderColor="LightGray"
-                                   BackgroundColor="{StaticResource BackgroundColor}" 
+ 
+                        <StackLayout 
+                            HorizontalOptions="Center">
+                            <Label Text="&#xf05a;" 
+                                   Style="{StaticResource LblFontAwesomeSol}"
+                                   HeightRequest="80"
+                                   FontSize="60"
+                                   
                                    >
-                                <Label Style="{StaticResource InfoText}" >
-                                    <Label.Text>
-                                        ежедневно: с 9.00 до 18.00 (касса до 17.15)
-&#10;Телефон для справок: +7 (928)4004717
-                                    </Label.Text>
-                                </Label>
-                            </Frame>
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                                </Label.GestureRecognizers>
+                            </Label>
                         </StackLayout>
                     </StackLayout>
                 </Frame>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GIKM.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,11 +13,42 @@ namespace GIKM.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PUpPage : Rg.Plugins.Popup.Pages.PopupPage
     {
-        public PUpPage()
+        public PUpPage(string _office)
         {
             InitializeComponent();
+            // Inizializzo conle label corrette
+            setText(_office);
         }
 
+        private void setText(string _officetype)
+        {
+            switch (_officetype)
+            {
+                case AppConstants.GIKM:
+                    this.WorkingTime.Text = "Время работы с 9.00 до 22.00 часов";
+                    this.Telephone.Text = "Телефон для справок: 8(86141)2136";
+                    this.Escursion.Text = "Посещение и экскурсии по предварительной записи по телефону 8(928)4004718";
+                    break;
+                case AppConstants.ZUBK:
+                    this.WorkingTime.Text = "ежедневно: с 9.00 до 18.00";
+                    this.Telephone.Text = "Телефон для справок: +7 (928)239-42-28";
+                    this.Escursion.Text = "";
+                    break;
+                    break;
+                case AppConstants.CEHA:
+                    this.WorkingTime.Text = "Время работы вт-вс . с 11.00 до 20.00 - чт. с 11.00 до 21.00";
+                    this.Telephone.Text = "Телефон для справок:  (86141) 3-32-98, (918)668-74-02";
+                    this.Escursion.Text = "";
+                    break;
+                case AppConstants.DOMK:
+                    this.WorkingTime.Text = "ежедневно: с 9.00 до 18.00 (касса до 17.15)";
+                    this.Telephone.Text = "Телефон для справок: +7 (928)4004717";
+                    this.Escursion.Text = "";
+                    break;
+                default:
+                    break;
+            }
+        }
         protected override void OnAppearing()
         {
             base.OnAppearing();

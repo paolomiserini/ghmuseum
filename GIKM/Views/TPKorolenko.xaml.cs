@@ -16,7 +16,7 @@ namespace GIKM.Views
         public TPKorolenko()
         {
             InitializeComponent();
-            BindingContext = new EventsList(AppResource.ResourceManager.GetString("DOMK"));
+            BindingContext = new EventsList(AppConstants.DOMK);
         }
     }
 }

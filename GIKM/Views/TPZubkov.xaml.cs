@@ -11,7 +11,7 @@ namespace GIKM.Views
         public TPZubkov()
         {
             InitializeComponent();
-            BindingContext = new EventsList(AppResource.ResourceManager.GetString("ZUBK"));
+            BindingContext = new EventsList(AppConstants.ZUBK);
         }
     }
 }

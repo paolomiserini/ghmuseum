@@ -25,27 +25,28 @@
         Padding="10, 0, 10, 0"
         InputTransparent="True">
             <Frame BorderColor="LightGray"
-                   BackgroundColor="{StaticResource BackgroundColor}"  >
+                   BackgroundColor="{StaticResource BackgroundColor}" 
+                   CornerRadius="20">
             <StackLayout>
-            <yummy:PancakeView BackgroundColor="LightGray"
+            <yummy:PancakeView BackgroundColor="DarkRed"
                                HasShadow="False"
                                HeightRequest="30"
-                               BackgroundGradientStartColor="DarkRed"
-                               BackgroundGradientEndColor="Red"
-                               BackgroundGradientAngle="45"
                                >
                 <Label Style="{StaticResource SubTitleTextOval}"
-                                    HorizontalTextAlignment="Start"
-                                    Text="Геленджик, ул. Островского, 1" 
+                                    HorizontalTextAlignment="Center"
+                                    Text="Информация и контакты" 
                                     Padding="10,5,0,0" />
             </yummy:PancakeView>
-            <Label Style="{StaticResource InfoText}" >
-                    <Label.Text>
-                        Время работы с 9.00 до 22.00 часов
-&#10;Телефон для справок: 8(86141)2136
-&#10;Посещение и экскурсии по предварительной записи по телефону 8(928)4004718
-                    </Label.Text>
-                </Label>
+                <Label Style="{StaticResource InfoText}" 
+                   x:Name="WorkingTime" 
+                       Padding="0,5,0,0"/>
+                <Label Style="{StaticResource InfoText}" 
+                       x:Name="Telephone" 
+                       Padding="0,5,0,0"/>
+                <Label Style="{StaticResource InfoText}"
+                       x:Name="Escursion" 
+                       Padding="0,5,0,0"/>
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="DarkGray"/>
             </StackLayout>
         </Frame>
                 

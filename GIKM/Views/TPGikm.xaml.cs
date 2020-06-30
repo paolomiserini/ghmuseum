@@ -16,7 +16,7 @@ namespace GIKM.Views
         public TPGikm()
         {
             InitializeComponent();
-            BindingContext = new EventsList(AppResource.ResourceManager.GetString("GIKM"));
+            BindingContext = new EventsList(AppConstants.GIKM);
         }
     }
 }

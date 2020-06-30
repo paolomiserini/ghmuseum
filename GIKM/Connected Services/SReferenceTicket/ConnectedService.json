@@ -1,0 +1,32 @@
+﻿{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.40203.910",
+  "GettingStartedDocument": {
+    "Uri": "https://go.microsoft.com/fwlink/?linkid=858517"
+  },
+  "ExtendedData": {
+    "inputs": [
+      "http://77.238.249.141:7474/TLMuseumGate/wsdl/ISoldService/"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "namespaceMappings": [
+      "*, SReferenceTicket"
+    ],
+    "references": [
+      "Rg.Plugins.Popup, {Rg.Plugins.Popup, 2.0.0.3}",
+      "System.ComponentModel, {System.ComponentModel, 4.3.0}",
+      "System.Numerics.Vectors, {System.Numerics.Vectors, 4.5.0}",
+      "System.Runtime, {System.Runtime, 4.3.0}",
+      "Xamarin.Essentials, {Xamarin.Essentials, 1.5.3.2}",
+      "Xamarin.Forms.Core, {Xamarin.Forms, 4.7.0.968}",
+      "Xamarin.Forms.PancakeView, {Xamarin.Forms.PancakeView, 1.4.2}",
+      "Xamarin.Forms.Platform, {Xamarin.Forms, 4.7.0.968}",
+      "Xamarin.Forms.Xaml, {Xamarin.Forms, 4.7.0.968}"
+    ],
+    "targetFramework": "netstandard2.0",
+    "typeReuseMode": "All"
+  }
+}

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -30,6 +30,10 @@
 
   <ItemGroup>
     <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.3" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.4.*" />
     <PackageReference Include="Xamarin.Forms" Version="4.7.0.968" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.4.2" />
@@ -94,5 +98,9 @@
     <EmbeddedResource Update="Views\TPKorolenko.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 </Project>

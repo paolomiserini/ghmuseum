@@ -46,18 +46,18 @@
 &#10;Выставки: «Геленджичане в Первой Мировой войне» познакомит с личными предметами, фотодокументами участников этого великого и забытого события; «Курорт Геленджик в 30-40-е годы XX века» представит мирную жизнь нашего города и становление советского курорта Геленджик; «Роль и значение Геленджика в годы Великой Отечественной войны» познакомит с подлинными предметами, фотодокументальным фондом данного периода истории нашего города, так как Геленджикский историко-краеведческий музей является золотой летописью нашего города-курорта Геленджик.
                             </Label.Text>
                         </Label>
-                        <StackLayout Padding="5,0,5,10">
-                            <Frame BorderColor="LightGray"
-                                   BackgroundColor="{StaticResource BackgroundColor}" 
+                        <StackLayout 
+                            HorizontalOptions="Center">
+                            <Label Text="&#xf05a;" 
+                                   Style="{StaticResource LblFontAwesomeSol}"
+                                   HeightRequest="80"
+                                   FontSize="60"
+                                   
                                    >
-                                <Label Style="{StaticResource InfoText}" >
-                                    <Label.Text>
-                                        Время работы с 9.00 до 22.00 часов
-&#10;Телефон для справок: 8(86141)2136
-&#10;Посещение и экскурсии по предварительной записи по телефону 8(928)4004718
-                                    </Label.Text>
-                                </Label>
-                            </Frame>
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                                </Label.GestureRecognizers>
+                            </Label>
                         </StackLayout>
                     </StackLayout>
                     

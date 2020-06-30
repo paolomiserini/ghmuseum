@@ -47,7 +47,7 @@ namespace GIKM.ViewModels
         {
             switch (_pageEventType)
             {
-                case "ZUBK":
+                case AppConstants.ZUBK:
                     // Nel caso non fossero presenti eventi andra' caricato un record vuoto con il testo
                     // che non esistono eventi aperti
                     Events.Add(new Event { Title = "ZUBK No event open", ShortDescription = "Non esistono eventi", Date = "# - #", id = 0, imageUrl = "https://img.gettextbooks.com/pi//9781490292878", formType = _pageEventType });
@@ -57,7 +57,7 @@ namespace GIKM.ViewModels
                     //    Events.Add(new Event { Title = "ZUBK prova prova prova prova", ShortDescription = "description long long long long", Date = "01/01/2020-31/12/2020", id = i, imageUrl = "https://img.gettextbooks.com/pi//9781490292878" , formType=_pageEventType});
                     //}
                     break;
-                case "GIKM":
+                case AppConstants.GIKM:
                     for (int i = 0; i < 25; i++)
                     {
                         Events.Add(new Event { Title = "GIKM prova prova prova prova", ShortDescription = "description long long long long", Date = "01/01/2020-31/12/2020", id = i, imageUrl = "https://img.gettextbooks.com/pi//9781490292878", formType=_pageEventType });
