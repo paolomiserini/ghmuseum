@@ -70,6 +70,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <BundleResource Include="Resources\Questrial-Regular.ttf" />
     <BundleResource Include="Resources\FontAwesome-Regular.otf" />
+    <BundleResource Include="Resources\FontAwesome-Solid.otf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

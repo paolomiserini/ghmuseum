@@ -65,7 +65,7 @@
                                    FontSize="60"
                                    >
                                 <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                                    <TapGestureRecognizer Tapped="On_LabelTapped"  NumberOfTapsRequired="1" />
                                 </Label.GestureRecognizers>
                             </Label>
                         </StackLayout>

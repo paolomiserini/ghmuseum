@@ -19,7 +19,7 @@ namespace GIKM.Views
             this.imgTop.Source = ImageSource.FromStream(() => new MemoryStream(byteArray));
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private void On_LabelTapped(object sender, EventArgs e)
         {
             // Todo implementare l'acquisto del biglietto ed il pagamento
 
