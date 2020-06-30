@@ -69,8 +69,8 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <BundleResource Include="Resources\Questrial-Regular.ttf" />
-    <BundleResource Include="Resources\FontAwesome-Regular.otf" />
-    <BundleResource Include="Resources\FontAwesome-Solid.otf" />
+    <BundleResource Include="Resources\FontAwesomeR-Regular.otf" />
+    <BundleResource Include="Resources\FontAwesomeS-Solid.otf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

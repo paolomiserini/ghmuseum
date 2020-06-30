@@ -46,9 +46,17 @@
 &#10;Выставки: «Геленджичане в Первой Мировой войне» познакомит с личными предметами, фотодокументами участников этого великого и забытого события; «Курорт Геленджик в 30-40-е годы XX века» представит мирную жизнь нашего города и становление советского курорта Геленджик; «Роль и значение Геленджика в годы Великой Отечественной войны» познакомит с подлинными предметами, фотодокументальным фондом данного периода истории нашего города, так как Геленджикский историко-краеведческий музей является золотой летописью нашего города-курорта Геленджик.
                             </Label.Text>
                         </Label>
+
                         <StackLayout 
-                            HorizontalOptions="Center">
-                            <Label Text="&#xf05a;" 
+                            HorizontalOptions="Center" Padding="0,10,0,20">
+                            <Image MinimumHeightRequest="100"
+                                   Source="{local:EmbeddedImage GIKM.Images.icons8-info-100.png}"
+                                   >
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <!--<Label Text="&#xf05a;" 
                                    Style="{StaticResource LblFontAwesomeSol}"
                                    HeightRequest="80"
                                    FontSize="60"
@@ -57,7 +65,7 @@
                                 <Label.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
                                 </Label.GestureRecognizers>
-                            </Label>
+                            </Label>-->
                         </StackLayout>
                     </StackLayout>
                     
