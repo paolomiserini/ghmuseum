@@ -31,7 +31,6 @@
                                HeightRequest="30"
                                BackgroundGradientStartColor="DarkRed"
                                BackgroundGradientEndColor="Red"
-                               BackgroundGradientAngle="45"
                                >
                             <Label Style="{StaticResource SubTitleTextOval}"
                                     HorizontalTextAlignment="Start"

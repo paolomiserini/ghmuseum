@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SReferenceTicket
+namespace ServiceRefTicket
 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="SReferenceTicket.ISoldService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceRefTicket.ISoldService")]
     public interface ISoldService
     {
         
@@ -29,7 +29,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.GetServiceResponse> GetServiceAsync(SReferenceTicket.GetServiceRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.GetServiceResponse> GetServiceAsync(ServiceRefTicket.GetServiceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#ReserveService", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -44,7 +44,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.ReserveServiceResponse> ReserveServiceAsync(SReferenceTicket.ReserveServiceRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.ReserveServiceResponse> ReserveServiceAsync(ServiceRefTicket.ReserveServiceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#SoldService", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -59,7 +59,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.SoldServiceResponse> SoldServiceAsync(SReferenceTicket.SoldServiceRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.SoldServiceResponse> SoldServiceAsync(ServiceRefTicket.SoldServiceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#ReserveServiceXML", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -74,7 +74,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.ReserveServiceXMLResponse> ReserveServiceXMLAsync(SReferenceTicket.ReserveServiceXMLRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.ReserveServiceXMLResponse> ReserveServiceXMLAsync(ServiceRefTicket.ReserveServiceXMLRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#SoldServiceXML", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -89,7 +89,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.SoldServiceXMLResponse> SoldServiceXMLAsync(SReferenceTicket.SoldServiceXMLRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.SoldServiceXMLResponse> SoldServiceXMLAsync(ServiceRefTicket.SoldServiceXMLRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#DeleteService", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -104,7 +104,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.DeleteServiceResponse> DeleteServiceAsync(SReferenceTicket.DeleteServiceRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.DeleteServiceResponse> DeleteServiceAsync(ServiceRefTicket.DeleteServiceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#RefundService", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -119,97 +119,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.RefundServiceResponse> RefundServiceAsync(SReferenceTicket.RefundServiceRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#GetService2", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceStat))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TCategoryVisitor))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TVisitObject))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TPrice2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceCategoryVisitor2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceVisitObject2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.GetService2Response> GetService2Async(SReferenceTicket.GetService2Request request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#ReserveService2", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceStat))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TCategoryVisitor))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TVisitObject))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TPrice2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceCategoryVisitor2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceVisitObject2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.ReserveService2Response> ReserveService2Async(SReferenceTicket.ReserveService2Request request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#SoldService2", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceStat))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TCategoryVisitor))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TVisitObject))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TPrice2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceCategoryVisitor2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceVisitObject2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.SoldService2Response> SoldService2Async(SReferenceTicket.SoldService2Request request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#GetServiceCost", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceStat))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TCategoryVisitor))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TVisitObject))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TPrice2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceCategoryVisitor2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceVisitObject2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.GetServiceCostResponse> GetServiceCostAsync(SReferenceTicket.GetServiceCostRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#GetExcursion", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceStat))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TCategoryVisitor))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TVisitObject))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TPrice2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceCategoryVisitor2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceVisitObject2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.GetExcursionResponse> GetExcursionAsync(SReferenceTicket.GetExcursionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#ReserveExcursion", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceStat))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TCategoryVisitor))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TVisitObject))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TPrice2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceCategoryVisitor2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceVisitObject2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService2))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.ReserveExcursionResponse> ReserveExcursionAsync(SReferenceTicket.ReserveExcursionRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.RefundServiceResponse> RefundServiceAsync(ServiceRefTicket.RefundServiceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#FindOrder", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -224,9 +134,9 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.FindOrderResponse> FindOrderAsync(SReferenceTicket.FindOrderRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.FindOrderResponse> FindOrderAsync(ServiceRefTicket.FindOrderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#PrintServiceFromOrder", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#GetService2", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceStat))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TCategoryVisitor))]
@@ -239,9 +149,9 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.PrintServiceFromOrderResponse> PrintServiceFromOrderAsync(SReferenceTicket.PrintServiceFromOrderRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.GetService2Response> GetService2Async(ServiceRefTicket.GetService2Request request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#GetFreeOfChargeServices", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#ReserveService2", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceStat))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TCategoryVisitor))]
@@ -254,9 +164,9 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.GetFreeOfChargeServicesResponse> GetFreeOfChargeServicesAsync(SReferenceTicket.GetFreeOfChargeServicesRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.ReserveService2Response> ReserveService2Async(ServiceRefTicket.ReserveService2Request request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#PrintFreeOfChargeService", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#SoldService2", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceStat))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TCategoryVisitor))]
@@ -269,7 +179,52 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.PrintFreeOfChargeServiceResponse> PrintFreeOfChargeServiceAsync(SReferenceTicket.PrintFreeOfChargeServiceRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.SoldService2Response> SoldService2Async(ServiceRefTicket.SoldService2Request request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#GetServiceCost", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceStat))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TCategoryVisitor))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TVisitObject))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TPrice2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceCategoryVisitor2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceVisitObject2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
+        System.Threading.Tasks.Task<ServiceRefTicket.GetServiceCostResponse> GetServiceCostAsync(ServiceRefTicket.GetServiceCostRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#GetExcursion", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceStat))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TCategoryVisitor))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TVisitObject))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TPrice2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceCategoryVisitor2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceVisitObject2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
+        System.Threading.Tasks.Task<ServiceRefTicket.GetExcursionResponse> GetExcursionAsync(ServiceRefTicket.GetExcursionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#ReserveExcursion", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceStat))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TCategoryVisitor))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TVisitObject))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TPrice2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceCategoryVisitor2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TServiceVisitObject2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService2))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
+        System.Threading.Tasks.Task<ServiceRefTicket.ReserveExcursionResponse> ReserveExcursionAsync(ServiceRefTicket.ReserveExcursionRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#GetSeances", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -284,7 +239,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.GetSeancesResponse> GetSeancesAsync(SReferenceTicket.GetSeancesRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.GetSeancesResponse> GetSeancesAsync(ServiceRefTicket.GetSeancesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#GetSeance", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -299,7 +254,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.GetSeanceResponse> GetSeanceAsync(SReferenceTicket.GetSeanceRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.GetSeanceResponse> GetSeanceAsync(ServiceRefTicket.GetSeanceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#SelectSeat", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -314,7 +269,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.SelectSeatResponse> SelectSeatAsync(SReferenceTicket.SelectSeatRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.SelectSeatResponse> SelectSeatAsync(ServiceRefTicket.SelectSeatRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#ReserveSeat", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -329,7 +284,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.ReserveSeatResponse> ReserveSeatAsync(SReferenceTicket.ReserveSeatRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.ReserveSeatResponse> ReserveSeatAsync(ServiceRefTicket.ReserveSeatRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#SoldSeat", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -344,7 +299,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.SoldSeatResponse> SoldSeatAsync(SReferenceTicket.SoldSeatRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.SoldSeatResponse> SoldSeatAsync(ServiceRefTicket.SoldSeatRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#GetOrders", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -359,7 +314,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.GetOrdersResponse> GetOrdersAsync(SReferenceTicket.GetOrdersRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.GetOrdersResponse> GetOrdersAsync(ServiceRefTicket.GetOrdersRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:SoldServiceIntf-ISoldService#GetSoldServiceStat", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
@@ -374,7 +329,7 @@ namespace SReferenceTicket
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TAnswerService1))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TOrderService))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(TService))]
-        System.Threading.Tasks.Task<SReferenceTicket.GetSoldServiceStatResponse> GetSoldServiceStatAsync(SReferenceTicket.GetSoldServiceStatRequest request);
+        System.Threading.Tasks.Task<ServiceRefTicket.GetSoldServiceStatResponse> GetSoldServiceStatAsync(ServiceRefTicket.GetSoldServiceStatRequest request);
     }
     
     /// <remarks/>
@@ -3591,13 +3546,13 @@ namespace SReferenceTicket
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TGetServiceAnswer @return;
+        public ServiceRefTicket.TGetServiceAnswer @return;
         
         public GetServiceResponse()
         {
         }
         
-        public GetServiceResponse(SReferenceTicket.TGetServiceAnswer @return)
+        public GetServiceResponse(ServiceRefTicket.TGetServiceAnswer @return)
         {
             this.@return = @return;
         }
@@ -3617,13 +3572,13 @@ namespace SReferenceTicket
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public SReferenceTicket.TReserveServiceRequest Request;
+        public ServiceRefTicket.TReserveServiceRequest Request;
         
         public ReserveServiceRequest()
         {
         }
         
-        public ReserveServiceRequest(string Login, string Password, SReferenceTicket.TReserveServiceRequest Request)
+        public ReserveServiceRequest(string Login, string Password, ServiceRefTicket.TReserveServiceRequest Request)
         {
             this.Login = Login;
             this.Password = Password;
@@ -3639,13 +3594,13 @@ namespace SReferenceTicket
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TReserveServiceAnswer @return;
+        public ServiceRefTicket.TReserveServiceAnswer @return;
         
         public ReserveServiceResponse()
         {
         }
         
-        public ReserveServiceResponse(SReferenceTicket.TReserveServiceAnswer @return)
+        public ReserveServiceResponse(ServiceRefTicket.TReserveServiceAnswer @return)
         {
             this.@return = @return;
         }
@@ -3665,13 +3620,13 @@ namespace SReferenceTicket
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public SReferenceTicket.TSoldServiceRequest Request;
+        public ServiceRefTicket.TSoldServiceRequest Request;
         
         public SoldServiceRequest()
         {
         }
         
-        public SoldServiceRequest(string Login, string Password, SReferenceTicket.TSoldServiceRequest Request)
+        public SoldServiceRequest(string Login, string Password, ServiceRefTicket.TSoldServiceRequest Request)
         {
             this.Login = Login;
             this.Password = Password;
@@ -3687,13 +3642,13 @@ namespace SReferenceTicket
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TSoldServiceAnswer @return;
+        public ServiceRefTicket.TSoldServiceAnswer @return;
         
         public SoldServiceResponse()
         {
         }
         
-        public SoldServiceResponse(SReferenceTicket.TSoldServiceAnswer @return)
+        public SoldServiceResponse(ServiceRefTicket.TSoldServiceAnswer @return)
         {
             this.@return = @return;
         }
@@ -3713,13 +3668,13 @@ namespace SReferenceTicket
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public SReferenceTicket.TReserveServiceRequestXML Request;
+        public ServiceRefTicket.TReserveServiceRequestXML Request;
         
         public ReserveServiceXMLRequest()
         {
         }
         
-        public ReserveServiceXMLRequest(string Login, string Password, SReferenceTicket.TReserveServiceRequestXML Request)
+        public ReserveServiceXMLRequest(string Login, string Password, ServiceRefTicket.TReserveServiceRequestXML Request)
         {
             this.Login = Login;
             this.Password = Password;
@@ -3735,13 +3690,13 @@ namespace SReferenceTicket
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TReserveServiceAnswer @return;
+        public ServiceRefTicket.TReserveServiceAnswer @return;
         
         public ReserveServiceXMLResponse()
         {
         }
         
-        public ReserveServiceXMLResponse(SReferenceTicket.TReserveServiceAnswer @return)
+        public ReserveServiceXMLResponse(ServiceRefTicket.TReserveServiceAnswer @return)
         {
             this.@return = @return;
         }
@@ -3761,13 +3716,13 @@ namespace SReferenceTicket
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public SReferenceTicket.TSoldServiceRequestXML Request;
+        public ServiceRefTicket.TSoldServiceRequestXML Request;
         
         public SoldServiceXMLRequest()
         {
         }
         
-        public SoldServiceXMLRequest(string Login, string Password, SReferenceTicket.TSoldServiceRequestXML Request)
+        public SoldServiceXMLRequest(string Login, string Password, ServiceRefTicket.TSoldServiceRequestXML Request)
         {
             this.Login = Login;
             this.Password = Password;
@@ -3783,13 +3738,13 @@ namespace SReferenceTicket
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TSoldServiceAnswer @return;
+        public ServiceRefTicket.TSoldServiceAnswer @return;
         
         public SoldServiceXMLResponse()
         {
         }
         
-        public SoldServiceXMLResponse(SReferenceTicket.TSoldServiceAnswer @return)
+        public SoldServiceXMLResponse(ServiceRefTicket.TSoldServiceAnswer @return)
         {
             this.@return = @return;
         }
@@ -3809,13 +3764,13 @@ namespace SReferenceTicket
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public SReferenceTicket.TDeleteServiceRequest Request;
+        public ServiceRefTicket.TDeleteServiceRequest Request;
         
         public DeleteServiceRequest()
         {
         }
         
-        public DeleteServiceRequest(string Login, string Password, SReferenceTicket.TDeleteServiceRequest Request)
+        public DeleteServiceRequest(string Login, string Password, ServiceRefTicket.TDeleteServiceRequest Request)
         {
             this.Login = Login;
             this.Password = Password;
@@ -3831,13 +3786,13 @@ namespace SReferenceTicket
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TDeleteServiceAnswer @return;
+        public ServiceRefTicket.TDeleteServiceAnswer @return;
         
         public DeleteServiceResponse()
         {
         }
         
-        public DeleteServiceResponse(SReferenceTicket.TDeleteServiceAnswer @return)
+        public DeleteServiceResponse(ServiceRefTicket.TDeleteServiceAnswer @return)
         {
             this.@return = @return;
         }
@@ -3857,13 +3812,13 @@ namespace SReferenceTicket
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public SReferenceTicket.TRefundServiceRequest Request;
+        public ServiceRefTicket.TRefundServiceRequest Request;
         
         public RefundServiceRequest()
         {
         }
         
-        public RefundServiceRequest(string Login, string Password, SReferenceTicket.TRefundServiceRequest Request)
+        public RefundServiceRequest(string Login, string Password, ServiceRefTicket.TRefundServiceRequest Request)
         {
             this.Login = Login;
             this.Password = Password;
@@ -3879,301 +3834,13 @@ namespace SReferenceTicket
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TRefundServiceAnswer @return;
+        public ServiceRefTicket.TRefundServiceAnswer @return;
         
         public RefundServiceResponse()
         {
         }
         
-        public RefundServiceResponse(SReferenceTicket.TRefundServiceAnswer @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetService2", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class GetService2Request
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string Login;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string Password;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public SReferenceTicket.TGetServiceRequest2 Request;
-        
-        public GetService2Request()
-        {
-        }
-        
-        public GetService2Request(string Login, string Password, SReferenceTicket.TGetServiceRequest2 Request)
-        {
-            this.Login = Login;
-            this.Password = Password;
-            this.Request = Request;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetService2Response", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class GetService2Response
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TGetServiceAnswer2 @return;
-        
-        public GetService2Response()
-        {
-        }
-        
-        public GetService2Response(SReferenceTicket.TGetServiceAnswer2 @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ReserveService2", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class ReserveService2Request
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string Login;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string Password;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public SReferenceTicket.TReserveServiceRequest2 Request;
-        
-        public ReserveService2Request()
-        {
-        }
-        
-        public ReserveService2Request(string Login, string Password, SReferenceTicket.TReserveServiceRequest2 Request)
-        {
-            this.Login = Login;
-            this.Password = Password;
-            this.Request = Request;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ReserveService2Response", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class ReserveService2Response
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TReserveServiceAnswer2 @return;
-        
-        public ReserveService2Response()
-        {
-        }
-        
-        public ReserveService2Response(SReferenceTicket.TReserveServiceAnswer2 @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SoldService2", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class SoldService2Request
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string Login;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string Password;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public SReferenceTicket.TSoldServiceRequest2 Request;
-        
-        public SoldService2Request()
-        {
-        }
-        
-        public SoldService2Request(string Login, string Password, SReferenceTicket.TSoldServiceRequest2 Request)
-        {
-            this.Login = Login;
-            this.Password = Password;
-            this.Request = Request;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SoldService2Response", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class SoldService2Response
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TSoldServiceAnswer2 @return;
-        
-        public SoldService2Response()
-        {
-        }
-        
-        public SoldService2Response(SReferenceTicket.TSoldServiceAnswer2 @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetServiceCost", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class GetServiceCostRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string Login;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string Password;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public SReferenceTicket.TGetServiceCostRequest Request;
-        
-        public GetServiceCostRequest()
-        {
-        }
-        
-        public GetServiceCostRequest(string Login, string Password, SReferenceTicket.TGetServiceCostRequest Request)
-        {
-            this.Login = Login;
-            this.Password = Password;
-            this.Request = Request;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetServiceCostResponse", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class GetServiceCostResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TGetServiceCostAnswer @return;
-        
-        public GetServiceCostResponse()
-        {
-        }
-        
-        public GetServiceCostResponse(SReferenceTicket.TGetServiceCostAnswer @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetExcursion", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class GetExcursionRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string Login;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string Password;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public SReferenceTicket.TGetServiceRequest2 Request;
-        
-        public GetExcursionRequest()
-        {
-        }
-        
-        public GetExcursionRequest(string Login, string Password, SReferenceTicket.TGetServiceRequest2 Request)
-        {
-            this.Login = Login;
-            this.Password = Password;
-            this.Request = Request;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetExcursionResponse", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class GetExcursionResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TGetServiceAnswer2 @return;
-        
-        public GetExcursionResponse()
-        {
-        }
-        
-        public GetExcursionResponse(SReferenceTicket.TGetServiceAnswer2 @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ReserveExcursion", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class ReserveExcursionRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string Login;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string Password;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public SReferenceTicket.TReserveExcursionRequest Request;
-        
-        public ReserveExcursionRequest()
-        {
-        }
-        
-        public ReserveExcursionRequest(string Login, string Password, SReferenceTicket.TReserveExcursionRequest Request)
-        {
-            this.Login = Login;
-            this.Password = Password;
-            this.Request = Request;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ReserveExcursionResponse", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class ReserveExcursionResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TReserveExcursionAnswer @return;
-        
-        public ReserveExcursionResponse()
-        {
-        }
-        
-        public ReserveExcursionResponse(SReferenceTicket.TReserveExcursionAnswer @return)
+        public RefundServiceResponse(ServiceRefTicket.TRefundServiceAnswer @return)
         {
             this.@return = @return;
         }
@@ -4230,8 +3897,8 @@ namespace SReferenceTicket
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="PrintServiceFromOrder", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class PrintServiceFromOrderRequest
+    [System.ServiceModel.MessageContractAttribute(WrapperName="GetService2", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
+    public partial class GetService2Request
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
@@ -4241,13 +3908,13 @@ namespace SReferenceTicket
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public string Request;
+        public ServiceRefTicket.TGetServiceRequest2 Request;
         
-        public PrintServiceFromOrderRequest()
+        public GetService2Request()
         {
         }
         
-        public PrintServiceFromOrderRequest(string Login, string Password, string Request)
+        public GetService2Request(string Login, string Password, ServiceRefTicket.TGetServiceRequest2 Request)
         {
             this.Login = Login;
             this.Password = Password;
@@ -4258,18 +3925,18 @@ namespace SReferenceTicket
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="PrintServiceFromOrderResponse", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class PrintServiceFromOrderResponse
+    [System.ServiceModel.MessageContractAttribute(WrapperName="GetService2Response", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
+    public partial class GetService2Response
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string @return;
+        public ServiceRefTicket.TGetServiceAnswer2 @return;
         
-        public PrintServiceFromOrderResponse()
+        public GetService2Response()
         {
         }
         
-        public PrintServiceFromOrderResponse(string @return)
+        public GetService2Response(ServiceRefTicket.TGetServiceAnswer2 @return)
         {
             this.@return = @return;
         }
@@ -4278,52 +3945,8 @@ namespace SReferenceTicket
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetFreeOfChargeServices", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class GetFreeOfChargeServicesRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string Login;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string Password;
-        
-        public GetFreeOfChargeServicesRequest()
-        {
-        }
-        
-        public GetFreeOfChargeServicesRequest(string Login, string Password)
-        {
-            this.Login = Login;
-            this.Password = Password;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetFreeOfChargeServicesResponse", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class GetFreeOfChargeServicesResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string @return;
-        
-        public GetFreeOfChargeServicesResponse()
-        {
-        }
-        
-        public GetFreeOfChargeServicesResponse(string @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="PrintFreeOfChargeService", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class PrintFreeOfChargeServiceRequest
+    [System.ServiceModel.MessageContractAttribute(WrapperName="ReserveService2", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
+    public partial class ReserveService2Request
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
@@ -4333,13 +3956,13 @@ namespace SReferenceTicket
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public string Request;
+        public ServiceRefTicket.TReserveServiceRequest2 Request;
         
-        public PrintFreeOfChargeServiceRequest()
+        public ReserveService2Request()
         {
         }
         
-        public PrintFreeOfChargeServiceRequest(string Login, string Password, string Request)
+        public ReserveService2Request(string Login, string Password, ServiceRefTicket.TReserveServiceRequest2 Request)
         {
             this.Login = Login;
             this.Password = Password;
@@ -4350,18 +3973,210 @@ namespace SReferenceTicket
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="PrintFreeOfChargeServiceResponse", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
-    public partial class PrintFreeOfChargeServiceResponse
+    [System.ServiceModel.MessageContractAttribute(WrapperName="ReserveService2Response", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
+    public partial class ReserveService2Response
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string @return;
+        public ServiceRefTicket.TReserveServiceAnswer2 @return;
         
-        public PrintFreeOfChargeServiceResponse()
+        public ReserveService2Response()
         {
         }
         
-        public PrintFreeOfChargeServiceResponse(string @return)
+        public ReserveService2Response(ServiceRefTicket.TReserveServiceAnswer2 @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="SoldService2", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
+    public partial class SoldService2Request
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public string Login;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+        public string Password;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
+        public ServiceRefTicket.TSoldServiceRequest2 Request;
+        
+        public SoldService2Request()
+        {
+        }
+        
+        public SoldService2Request(string Login, string Password, ServiceRefTicket.TSoldServiceRequest2 Request)
+        {
+            this.Login = Login;
+            this.Password = Password;
+            this.Request = Request;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="SoldService2Response", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
+    public partial class SoldService2Response
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public ServiceRefTicket.TSoldServiceAnswer2 @return;
+        
+        public SoldService2Response()
+        {
+        }
+        
+        public SoldService2Response(ServiceRefTicket.TSoldServiceAnswer2 @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="GetServiceCost", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
+    public partial class GetServiceCostRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public string Login;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+        public string Password;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
+        public ServiceRefTicket.TGetServiceCostRequest Request;
+        
+        public GetServiceCostRequest()
+        {
+        }
+        
+        public GetServiceCostRequest(string Login, string Password, ServiceRefTicket.TGetServiceCostRequest Request)
+        {
+            this.Login = Login;
+            this.Password = Password;
+            this.Request = Request;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="GetServiceCostResponse", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
+    public partial class GetServiceCostResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public ServiceRefTicket.TGetServiceCostAnswer @return;
+        
+        public GetServiceCostResponse()
+        {
+        }
+        
+        public GetServiceCostResponse(ServiceRefTicket.TGetServiceCostAnswer @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="GetExcursion", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
+    public partial class GetExcursionRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public string Login;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+        public string Password;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
+        public ServiceRefTicket.TGetServiceRequest2 Request;
+        
+        public GetExcursionRequest()
+        {
+        }
+        
+        public GetExcursionRequest(string Login, string Password, ServiceRefTicket.TGetServiceRequest2 Request)
+        {
+            this.Login = Login;
+            this.Password = Password;
+            this.Request = Request;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="GetExcursionResponse", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
+    public partial class GetExcursionResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public ServiceRefTicket.TGetServiceAnswer2 @return;
+        
+        public GetExcursionResponse()
+        {
+        }
+        
+        public GetExcursionResponse(ServiceRefTicket.TGetServiceAnswer2 @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="ReserveExcursion", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
+    public partial class ReserveExcursionRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public string Login;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
+        public string Password;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
+        public ServiceRefTicket.TReserveExcursionRequest Request;
+        
+        public ReserveExcursionRequest()
+        {
+        }
+        
+        public ReserveExcursionRequest(string Login, string Password, ServiceRefTicket.TReserveExcursionRequest Request)
+        {
+            this.Login = Login;
+            this.Password = Password;
+            this.Request = Request;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="ReserveExcursionResponse", WrapperNamespace="urn:SoldServiceIntf-ISoldService", IsWrapped=true)]
+    public partial class ReserveExcursionResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public ServiceRefTicket.TReserveExcursionAnswer @return;
+        
+        public ReserveExcursionResponse()
+        {
+        }
+        
+        public ReserveExcursionResponse(ServiceRefTicket.TReserveExcursionAnswer @return)
         {
             this.@return = @return;
         }
@@ -4720,13 +4535,13 @@ namespace SReferenceTicket
         public string AdminPassword;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=3)]
-        public SReferenceTicket.TSoldServiceStatRequest Request;
+        public ServiceRefTicket.TSoldServiceStatRequest Request;
         
         public GetSoldServiceStatRequest()
         {
         }
         
-        public GetSoldServiceStatRequest(string Login, string Password, string AdminPassword, SReferenceTicket.TSoldServiceStatRequest Request)
+        public GetSoldServiceStatRequest(string Login, string Password, string AdminPassword, ServiceRefTicket.TSoldServiceStatRequest Request)
         {
             this.Login = Login;
             this.Password = Password;
@@ -4743,26 +4558,26 @@ namespace SReferenceTicket
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public SReferenceTicket.TSoldServiceStatAnswer @return;
+        public ServiceRefTicket.TSoldServiceStatAnswer @return;
         
         public GetSoldServiceStatResponse()
         {
         }
         
-        public GetSoldServiceStatResponse(SReferenceTicket.TSoldServiceStatAnswer @return)
+        public GetSoldServiceStatResponse(ServiceRefTicket.TSoldServiceStatAnswer @return)
         {
             this.@return = @return;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    public interface ISoldServiceChannel : SReferenceTicket.ISoldService, System.ServiceModel.IClientChannel
+    public interface ISoldServiceChannel : ServiceRefTicket.ISoldService, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    public partial class SoldServiceClient : System.ServiceModel.ClientBase<SReferenceTicket.ISoldService>, SReferenceTicket.ISoldService
+    public partial class SoldServiceClient : System.ServiceModel.ClientBase<ServiceRefTicket.ISoldService>, ServiceRefTicket.ISoldService
     {
         
         /// <summary>
@@ -4806,374 +4621,330 @@ namespace SReferenceTicket
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.GetServiceResponse> SReferenceTicket.ISoldService.GetServiceAsync(SReferenceTicket.GetServiceRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.GetServiceResponse> ServiceRefTicket.ISoldService.GetServiceAsync(ServiceRefTicket.GetServiceRequest request)
         {
             return base.Channel.GetServiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.GetServiceResponse> GetServiceAsync(string Login, string Password)
+        public System.Threading.Tasks.Task<ServiceRefTicket.GetServiceResponse> GetServiceAsync(string Login, string Password)
         {
-            SReferenceTicket.GetServiceRequest inValue = new SReferenceTicket.GetServiceRequest();
+            ServiceRefTicket.GetServiceRequest inValue = new ServiceRefTicket.GetServiceRequest();
             inValue.Login = Login;
             inValue.Password = Password;
-            return ((SReferenceTicket.ISoldService)(this)).GetServiceAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).GetServiceAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.ReserveServiceResponse> SReferenceTicket.ISoldService.ReserveServiceAsync(SReferenceTicket.ReserveServiceRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.ReserveServiceResponse> ServiceRefTicket.ISoldService.ReserveServiceAsync(ServiceRefTicket.ReserveServiceRequest request)
         {
             return base.Channel.ReserveServiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.ReserveServiceResponse> ReserveServiceAsync(string Login, string Password, SReferenceTicket.TReserveServiceRequest Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.ReserveServiceResponse> ReserveServiceAsync(string Login, string Password, ServiceRefTicket.TReserveServiceRequest Request)
         {
-            SReferenceTicket.ReserveServiceRequest inValue = new SReferenceTicket.ReserveServiceRequest();
+            ServiceRefTicket.ReserveServiceRequest inValue = new ServiceRefTicket.ReserveServiceRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).ReserveServiceAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).ReserveServiceAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.SoldServiceResponse> SReferenceTicket.ISoldService.SoldServiceAsync(SReferenceTicket.SoldServiceRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.SoldServiceResponse> ServiceRefTicket.ISoldService.SoldServiceAsync(ServiceRefTicket.SoldServiceRequest request)
         {
             return base.Channel.SoldServiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.SoldServiceResponse> SoldServiceAsync(string Login, string Password, SReferenceTicket.TSoldServiceRequest Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.SoldServiceResponse> SoldServiceAsync(string Login, string Password, ServiceRefTicket.TSoldServiceRequest Request)
         {
-            SReferenceTicket.SoldServiceRequest inValue = new SReferenceTicket.SoldServiceRequest();
+            ServiceRefTicket.SoldServiceRequest inValue = new ServiceRefTicket.SoldServiceRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).SoldServiceAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).SoldServiceAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.ReserveServiceXMLResponse> SReferenceTicket.ISoldService.ReserveServiceXMLAsync(SReferenceTicket.ReserveServiceXMLRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.ReserveServiceXMLResponse> ServiceRefTicket.ISoldService.ReserveServiceXMLAsync(ServiceRefTicket.ReserveServiceXMLRequest request)
         {
             return base.Channel.ReserveServiceXMLAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.ReserveServiceXMLResponse> ReserveServiceXMLAsync(string Login, string Password, SReferenceTicket.TReserveServiceRequestXML Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.ReserveServiceXMLResponse> ReserveServiceXMLAsync(string Login, string Password, ServiceRefTicket.TReserveServiceRequestXML Request)
         {
-            SReferenceTicket.ReserveServiceXMLRequest inValue = new SReferenceTicket.ReserveServiceXMLRequest();
+            ServiceRefTicket.ReserveServiceXMLRequest inValue = new ServiceRefTicket.ReserveServiceXMLRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).ReserveServiceXMLAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).ReserveServiceXMLAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.SoldServiceXMLResponse> SReferenceTicket.ISoldService.SoldServiceXMLAsync(SReferenceTicket.SoldServiceXMLRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.SoldServiceXMLResponse> ServiceRefTicket.ISoldService.SoldServiceXMLAsync(ServiceRefTicket.SoldServiceXMLRequest request)
         {
             return base.Channel.SoldServiceXMLAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.SoldServiceXMLResponse> SoldServiceXMLAsync(string Login, string Password, SReferenceTicket.TSoldServiceRequestXML Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.SoldServiceXMLResponse> SoldServiceXMLAsync(string Login, string Password, ServiceRefTicket.TSoldServiceRequestXML Request)
         {
-            SReferenceTicket.SoldServiceXMLRequest inValue = new SReferenceTicket.SoldServiceXMLRequest();
+            ServiceRefTicket.SoldServiceXMLRequest inValue = new ServiceRefTicket.SoldServiceXMLRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).SoldServiceXMLAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).SoldServiceXMLAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.DeleteServiceResponse> SReferenceTicket.ISoldService.DeleteServiceAsync(SReferenceTicket.DeleteServiceRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.DeleteServiceResponse> ServiceRefTicket.ISoldService.DeleteServiceAsync(ServiceRefTicket.DeleteServiceRequest request)
         {
             return base.Channel.DeleteServiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.DeleteServiceResponse> DeleteServiceAsync(string Login, string Password, SReferenceTicket.TDeleteServiceRequest Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.DeleteServiceResponse> DeleteServiceAsync(string Login, string Password, ServiceRefTicket.TDeleteServiceRequest Request)
         {
-            SReferenceTicket.DeleteServiceRequest inValue = new SReferenceTicket.DeleteServiceRequest();
+            ServiceRefTicket.DeleteServiceRequest inValue = new ServiceRefTicket.DeleteServiceRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).DeleteServiceAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).DeleteServiceAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.RefundServiceResponse> SReferenceTicket.ISoldService.RefundServiceAsync(SReferenceTicket.RefundServiceRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.RefundServiceResponse> ServiceRefTicket.ISoldService.RefundServiceAsync(ServiceRefTicket.RefundServiceRequest request)
         {
             return base.Channel.RefundServiceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.RefundServiceResponse> RefundServiceAsync(string Login, string Password, SReferenceTicket.TRefundServiceRequest Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.RefundServiceResponse> RefundServiceAsync(string Login, string Password, ServiceRefTicket.TRefundServiceRequest Request)
         {
-            SReferenceTicket.RefundServiceRequest inValue = new SReferenceTicket.RefundServiceRequest();
+            ServiceRefTicket.RefundServiceRequest inValue = new ServiceRefTicket.RefundServiceRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).RefundServiceAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).RefundServiceAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.GetService2Response> SReferenceTicket.ISoldService.GetService2Async(SReferenceTicket.GetService2Request request)
-        {
-            return base.Channel.GetService2Async(request);
-        }
-        
-        public System.Threading.Tasks.Task<SReferenceTicket.GetService2Response> GetService2Async(string Login, string Password, SReferenceTicket.TGetServiceRequest2 Request)
-        {
-            SReferenceTicket.GetService2Request inValue = new SReferenceTicket.GetService2Request();
-            inValue.Login = Login;
-            inValue.Password = Password;
-            inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).GetService2Async(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.ReserveService2Response> SReferenceTicket.ISoldService.ReserveService2Async(SReferenceTicket.ReserveService2Request request)
-        {
-            return base.Channel.ReserveService2Async(request);
-        }
-        
-        public System.Threading.Tasks.Task<SReferenceTicket.ReserveService2Response> ReserveService2Async(string Login, string Password, SReferenceTicket.TReserveServiceRequest2 Request)
-        {
-            SReferenceTicket.ReserveService2Request inValue = new SReferenceTicket.ReserveService2Request();
-            inValue.Login = Login;
-            inValue.Password = Password;
-            inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).ReserveService2Async(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.SoldService2Response> SReferenceTicket.ISoldService.SoldService2Async(SReferenceTicket.SoldService2Request request)
-        {
-            return base.Channel.SoldService2Async(request);
-        }
-        
-        public System.Threading.Tasks.Task<SReferenceTicket.SoldService2Response> SoldService2Async(string Login, string Password, SReferenceTicket.TSoldServiceRequest2 Request)
-        {
-            SReferenceTicket.SoldService2Request inValue = new SReferenceTicket.SoldService2Request();
-            inValue.Login = Login;
-            inValue.Password = Password;
-            inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).SoldService2Async(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.GetServiceCostResponse> SReferenceTicket.ISoldService.GetServiceCostAsync(SReferenceTicket.GetServiceCostRequest request)
-        {
-            return base.Channel.GetServiceCostAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SReferenceTicket.GetServiceCostResponse> GetServiceCostAsync(string Login, string Password, SReferenceTicket.TGetServiceCostRequest Request)
-        {
-            SReferenceTicket.GetServiceCostRequest inValue = new SReferenceTicket.GetServiceCostRequest();
-            inValue.Login = Login;
-            inValue.Password = Password;
-            inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).GetServiceCostAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.GetExcursionResponse> SReferenceTicket.ISoldService.GetExcursionAsync(SReferenceTicket.GetExcursionRequest request)
-        {
-            return base.Channel.GetExcursionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SReferenceTicket.GetExcursionResponse> GetExcursionAsync(string Login, string Password, SReferenceTicket.TGetServiceRequest2 Request)
-        {
-            SReferenceTicket.GetExcursionRequest inValue = new SReferenceTicket.GetExcursionRequest();
-            inValue.Login = Login;
-            inValue.Password = Password;
-            inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).GetExcursionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.ReserveExcursionResponse> SReferenceTicket.ISoldService.ReserveExcursionAsync(SReferenceTicket.ReserveExcursionRequest request)
-        {
-            return base.Channel.ReserveExcursionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SReferenceTicket.ReserveExcursionResponse> ReserveExcursionAsync(string Login, string Password, SReferenceTicket.TReserveExcursionRequest Request)
-        {
-            SReferenceTicket.ReserveExcursionRequest inValue = new SReferenceTicket.ReserveExcursionRequest();
-            inValue.Login = Login;
-            inValue.Password = Password;
-            inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).ReserveExcursionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.FindOrderResponse> SReferenceTicket.ISoldService.FindOrderAsync(SReferenceTicket.FindOrderRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.FindOrderResponse> ServiceRefTicket.ISoldService.FindOrderAsync(ServiceRefTicket.FindOrderRequest request)
         {
             return base.Channel.FindOrderAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.FindOrderResponse> FindOrderAsync(string Login, string Password, string Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.FindOrderResponse> FindOrderAsync(string Login, string Password, string Request)
         {
-            SReferenceTicket.FindOrderRequest inValue = new SReferenceTicket.FindOrderRequest();
+            ServiceRefTicket.FindOrderRequest inValue = new ServiceRefTicket.FindOrderRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).FindOrderAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).FindOrderAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.PrintServiceFromOrderResponse> SReferenceTicket.ISoldService.PrintServiceFromOrderAsync(SReferenceTicket.PrintServiceFromOrderRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.GetService2Response> ServiceRefTicket.ISoldService.GetService2Async(ServiceRefTicket.GetService2Request request)
         {
-            return base.Channel.PrintServiceFromOrderAsync(request);
+            return base.Channel.GetService2Async(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.PrintServiceFromOrderResponse> PrintServiceFromOrderAsync(string Login, string Password, string Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.GetService2Response> GetService2Async(string Login, string Password, ServiceRefTicket.TGetServiceRequest2 Request)
         {
-            SReferenceTicket.PrintServiceFromOrderRequest inValue = new SReferenceTicket.PrintServiceFromOrderRequest();
+            ServiceRefTicket.GetService2Request inValue = new ServiceRefTicket.GetService2Request();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).PrintServiceFromOrderAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).GetService2Async(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.GetFreeOfChargeServicesResponse> SReferenceTicket.ISoldService.GetFreeOfChargeServicesAsync(SReferenceTicket.GetFreeOfChargeServicesRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.ReserveService2Response> ServiceRefTicket.ISoldService.ReserveService2Async(ServiceRefTicket.ReserveService2Request request)
         {
-            return base.Channel.GetFreeOfChargeServicesAsync(request);
+            return base.Channel.ReserveService2Async(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.GetFreeOfChargeServicesResponse> GetFreeOfChargeServicesAsync(string Login, string Password)
+        public System.Threading.Tasks.Task<ServiceRefTicket.ReserveService2Response> ReserveService2Async(string Login, string Password, ServiceRefTicket.TReserveServiceRequest2 Request)
         {
-            SReferenceTicket.GetFreeOfChargeServicesRequest inValue = new SReferenceTicket.GetFreeOfChargeServicesRequest();
-            inValue.Login = Login;
-            inValue.Password = Password;
-            return ((SReferenceTicket.ISoldService)(this)).GetFreeOfChargeServicesAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.PrintFreeOfChargeServiceResponse> SReferenceTicket.ISoldService.PrintFreeOfChargeServiceAsync(SReferenceTicket.PrintFreeOfChargeServiceRequest request)
-        {
-            return base.Channel.PrintFreeOfChargeServiceAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SReferenceTicket.PrintFreeOfChargeServiceResponse> PrintFreeOfChargeServiceAsync(string Login, string Password, string Request)
-        {
-            SReferenceTicket.PrintFreeOfChargeServiceRequest inValue = new SReferenceTicket.PrintFreeOfChargeServiceRequest();
+            ServiceRefTicket.ReserveService2Request inValue = new ServiceRefTicket.ReserveService2Request();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).PrintFreeOfChargeServiceAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).ReserveService2Async(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.GetSeancesResponse> SReferenceTicket.ISoldService.GetSeancesAsync(SReferenceTicket.GetSeancesRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.SoldService2Response> ServiceRefTicket.ISoldService.SoldService2Async(ServiceRefTicket.SoldService2Request request)
+        {
+            return base.Channel.SoldService2Async(request);
+        }
+        
+        public System.Threading.Tasks.Task<ServiceRefTicket.SoldService2Response> SoldService2Async(string Login, string Password, ServiceRefTicket.TSoldServiceRequest2 Request)
+        {
+            ServiceRefTicket.SoldService2Request inValue = new ServiceRefTicket.SoldService2Request();
+            inValue.Login = Login;
+            inValue.Password = Password;
+            inValue.Request = Request;
+            return ((ServiceRefTicket.ISoldService)(this)).SoldService2Async(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ServiceRefTicket.GetServiceCostResponse> ServiceRefTicket.ISoldService.GetServiceCostAsync(ServiceRefTicket.GetServiceCostRequest request)
+        {
+            return base.Channel.GetServiceCostAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<ServiceRefTicket.GetServiceCostResponse> GetServiceCostAsync(string Login, string Password, ServiceRefTicket.TGetServiceCostRequest Request)
+        {
+            ServiceRefTicket.GetServiceCostRequest inValue = new ServiceRefTicket.GetServiceCostRequest();
+            inValue.Login = Login;
+            inValue.Password = Password;
+            inValue.Request = Request;
+            return ((ServiceRefTicket.ISoldService)(this)).GetServiceCostAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ServiceRefTicket.GetExcursionResponse> ServiceRefTicket.ISoldService.GetExcursionAsync(ServiceRefTicket.GetExcursionRequest request)
+        {
+            return base.Channel.GetExcursionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<ServiceRefTicket.GetExcursionResponse> GetExcursionAsync(string Login, string Password, ServiceRefTicket.TGetServiceRequest2 Request)
+        {
+            ServiceRefTicket.GetExcursionRequest inValue = new ServiceRefTicket.GetExcursionRequest();
+            inValue.Login = Login;
+            inValue.Password = Password;
+            inValue.Request = Request;
+            return ((ServiceRefTicket.ISoldService)(this)).GetExcursionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ServiceRefTicket.ReserveExcursionResponse> ServiceRefTicket.ISoldService.ReserveExcursionAsync(ServiceRefTicket.ReserveExcursionRequest request)
+        {
+            return base.Channel.ReserveExcursionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<ServiceRefTicket.ReserveExcursionResponse> ReserveExcursionAsync(string Login, string Password, ServiceRefTicket.TReserveExcursionRequest Request)
+        {
+            ServiceRefTicket.ReserveExcursionRequest inValue = new ServiceRefTicket.ReserveExcursionRequest();
+            inValue.Login = Login;
+            inValue.Password = Password;
+            inValue.Request = Request;
+            return ((ServiceRefTicket.ISoldService)(this)).ReserveExcursionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ServiceRefTicket.GetSeancesResponse> ServiceRefTicket.ISoldService.GetSeancesAsync(ServiceRefTicket.GetSeancesRequest request)
         {
             return base.Channel.GetSeancesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.GetSeancesResponse> GetSeancesAsync(string Login, string Password, string SessionName, bool IsRaiseError, string Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.GetSeancesResponse> GetSeancesAsync(string Login, string Password, string SessionName, bool IsRaiseError, string Request)
         {
-            SReferenceTicket.GetSeancesRequest inValue = new SReferenceTicket.GetSeancesRequest();
+            ServiceRefTicket.GetSeancesRequest inValue = new ServiceRefTicket.GetSeancesRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.SessionName = SessionName;
             inValue.IsRaiseError = IsRaiseError;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).GetSeancesAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).GetSeancesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.GetSeanceResponse> SReferenceTicket.ISoldService.GetSeanceAsync(SReferenceTicket.GetSeanceRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.GetSeanceResponse> ServiceRefTicket.ISoldService.GetSeanceAsync(ServiceRefTicket.GetSeanceRequest request)
         {
             return base.Channel.GetSeanceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.GetSeanceResponse> GetSeanceAsync(string Login, string Password, string SessionName, bool IsRaiseError, string Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.GetSeanceResponse> GetSeanceAsync(string Login, string Password, string SessionName, bool IsRaiseError, string Request)
         {
-            SReferenceTicket.GetSeanceRequest inValue = new SReferenceTicket.GetSeanceRequest();
+            ServiceRefTicket.GetSeanceRequest inValue = new ServiceRefTicket.GetSeanceRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.SessionName = SessionName;
             inValue.IsRaiseError = IsRaiseError;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).GetSeanceAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).GetSeanceAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.SelectSeatResponse> SReferenceTicket.ISoldService.SelectSeatAsync(SReferenceTicket.SelectSeatRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.SelectSeatResponse> ServiceRefTicket.ISoldService.SelectSeatAsync(ServiceRefTicket.SelectSeatRequest request)
         {
             return base.Channel.SelectSeatAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.SelectSeatResponse> SelectSeatAsync(string Login, string Password, string SessionName, bool IsRaiseError, string Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.SelectSeatResponse> SelectSeatAsync(string Login, string Password, string SessionName, bool IsRaiseError, string Request)
         {
-            SReferenceTicket.SelectSeatRequest inValue = new SReferenceTicket.SelectSeatRequest();
+            ServiceRefTicket.SelectSeatRequest inValue = new ServiceRefTicket.SelectSeatRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.SessionName = SessionName;
             inValue.IsRaiseError = IsRaiseError;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).SelectSeatAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).SelectSeatAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.ReserveSeatResponse> SReferenceTicket.ISoldService.ReserveSeatAsync(SReferenceTicket.ReserveSeatRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.ReserveSeatResponse> ServiceRefTicket.ISoldService.ReserveSeatAsync(ServiceRefTicket.ReserveSeatRequest request)
         {
             return base.Channel.ReserveSeatAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.ReserveSeatResponse> ReserveSeatAsync(string Login, string Password, string SessionName, bool IsRaiseError, string Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.ReserveSeatResponse> ReserveSeatAsync(string Login, string Password, string SessionName, bool IsRaiseError, string Request)
         {
-            SReferenceTicket.ReserveSeatRequest inValue = new SReferenceTicket.ReserveSeatRequest();
+            ServiceRefTicket.ReserveSeatRequest inValue = new ServiceRefTicket.ReserveSeatRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.SessionName = SessionName;
             inValue.IsRaiseError = IsRaiseError;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).ReserveSeatAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).ReserveSeatAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.SoldSeatResponse> SReferenceTicket.ISoldService.SoldSeatAsync(SReferenceTicket.SoldSeatRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.SoldSeatResponse> ServiceRefTicket.ISoldService.SoldSeatAsync(ServiceRefTicket.SoldSeatRequest request)
         {
             return base.Channel.SoldSeatAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.SoldSeatResponse> SoldSeatAsync(string Login, string Password, string SessionName, bool IsRaiseError, string Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.SoldSeatResponse> SoldSeatAsync(string Login, string Password, string SessionName, bool IsRaiseError, string Request)
         {
-            SReferenceTicket.SoldSeatRequest inValue = new SReferenceTicket.SoldSeatRequest();
+            ServiceRefTicket.SoldSeatRequest inValue = new ServiceRefTicket.SoldSeatRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.SessionName = SessionName;
             inValue.IsRaiseError = IsRaiseError;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).SoldSeatAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).SoldSeatAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.GetOrdersResponse> SReferenceTicket.ISoldService.GetOrdersAsync(SReferenceTicket.GetOrdersRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.GetOrdersResponse> ServiceRefTicket.ISoldService.GetOrdersAsync(ServiceRefTicket.GetOrdersRequest request)
         {
             return base.Channel.GetOrdersAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.GetOrdersResponse> GetOrdersAsync(string Login, string Password, string SessionName, bool IsRaiseError, string Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.GetOrdersResponse> GetOrdersAsync(string Login, string Password, string SessionName, bool IsRaiseError, string Request)
         {
-            SReferenceTicket.GetOrdersRequest inValue = new SReferenceTicket.GetOrdersRequest();
+            ServiceRefTicket.GetOrdersRequest inValue = new ServiceRefTicket.GetOrdersRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.SessionName = SessionName;
             inValue.IsRaiseError = IsRaiseError;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).GetOrdersAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).GetOrdersAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SReferenceTicket.GetSoldServiceStatResponse> SReferenceTicket.ISoldService.GetSoldServiceStatAsync(SReferenceTicket.GetSoldServiceStatRequest request)
+        System.Threading.Tasks.Task<ServiceRefTicket.GetSoldServiceStatResponse> ServiceRefTicket.ISoldService.GetSoldServiceStatAsync(ServiceRefTicket.GetSoldServiceStatRequest request)
         {
             return base.Channel.GetSoldServiceStatAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SReferenceTicket.GetSoldServiceStatResponse> GetSoldServiceStatAsync(string Login, string Password, string AdminPassword, SReferenceTicket.TSoldServiceStatRequest Request)
+        public System.Threading.Tasks.Task<ServiceRefTicket.GetSoldServiceStatResponse> GetSoldServiceStatAsync(string Login, string Password, string AdminPassword, ServiceRefTicket.TSoldServiceStatRequest Request)
         {
-            SReferenceTicket.GetSoldServiceStatRequest inValue = new SReferenceTicket.GetSoldServiceStatRequest();
+            ServiceRefTicket.GetSoldServiceStatRequest inValue = new ServiceRefTicket.GetSoldServiceStatRequest();
             inValue.Login = Login;
             inValue.Password = Password;
             inValue.AdminPassword = AdminPassword;
             inValue.Request = Request;
-            return ((SReferenceTicket.ISoldService)(this)).GetSoldServiceStatAsync(inValue);
+            return ((ServiceRefTicket.ISoldService)(this)).GetSoldServiceStatAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

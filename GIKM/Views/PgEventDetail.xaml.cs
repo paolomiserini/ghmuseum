@@ -21,12 +21,15 @@ namespace GIKM.Views
 
         private void On_LabelTapped(object sender, EventArgs e)
         {
-            // Todo implementare l'acquisto del biglietto ed il pagamento
+            // Apre la pagina di pagamento
+            var _singlePayment = new PaymentInfo();
+            _singlePayment.Amount = "1000,00";
+            _singlePayment.Name = "";
+            _singlePayment.Surname = "";
+            Navigation.PushAsync(new PgTicketSelection(_singlePayment));
 
-            //var _pagetoopen = new PUpPage(AppConstants.GIKM);
-            //OpenPopUp(_pagetoopen);
         }
 
- 
+
     }
 }

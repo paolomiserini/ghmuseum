@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Padding="0,20,0,0"
+             Title="Билет"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             xmlns:local="clr-namespace:GIKM.MarkupExtensions"
+             mc:Ignorable="d"
+             x:Class="GIKM.Views.PgTicketSelection">
+    <ScrollView>
+        <StackLayout VerticalOptions="StartAndExpand"
+                    BackgroundColor="{DynamicResource BackgroundColor}">
+
+            <Image  Aspect="AspectFill"
+                    Source="{local:EmbeddedImage GIKM.Images.buy_ticket_banner.jpg}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" >
+            </Image>
+
+            <StackLayout Padding="5,0,5,0">
+                <Frame BorderColor="{StaticResource DarkRedColor}"
+                        BackgroundColor="{StaticResource BackgroundColor}"
+                        CornerRadius="5"
+                        Padding="0,0,0,0">
+                    <StackLayout>
+                            <Label Style="{StaticResource SubTitleText}"
+                                     HorizontalTextAlignment="Start"
+                                     Text="цена" 
+                                     Padding="10,5,0,0"/>
+                            <Entry HorizontalTextAlignment="Start"
+                                   Text="{Binding singleDataInfo.Amount}"
+                                   Placeholder="цена"
+                                   IsEnabled="False"
+                                   >
+                            </Entry>
+
+                        <Label Style="{StaticResource SubTitleText}"
+                                Text="имя"
+                                LineBreakMode="WordWrap"
+                                Padding="5,0,0,0">
+                        </Label>
+                        <Entry HorizontalTextAlignment="Start"
+                                   Text="{Binding singleDataInfo.Name}"
+                                   Placeholder="имя"
+                                   >
+                        </Entry>
+
+                        <Label Style="{StaticResource SubTitleText}"
+                                Text="фамилия"
+                                Padding="5,0,0,0">
+                        </Label>
+                        <Entry HorizontalTextAlignment="Start"
+                                   Text="{Binding singleDataInfo.Surname}"
+                                   Placeholder="фамилия"
+                                   >
+                        </Entry>
+
+                        <StackLayout 
+                            HorizontalOptions="Center" Padding="0,10,0,20">
+                            <Image MinimumHeightRequest="100"
+                                   Source="{local:EmbeddedImage GIKM.Images.mastercard-credit-card-80.png}"
+                                   >
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
