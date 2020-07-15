@@ -12,5 +12,10 @@ namespace GIKM.Views
             InitializeComponent();
             webView.Source = URL;
         }
+
+        private void Button_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PopAsync();
+        }
     }
 }

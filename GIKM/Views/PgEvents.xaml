@@ -10,9 +10,11 @@
     <ContentPage.Resources>
         <DataTemplate x:Key="EventTemplate">
             <ViewCell>
-                    <Grid BackgroundColor="{StaticResource BackgroundColor}"
-                      RowSpacing="2"
-                      Padding="10">
+                <Grid BackgroundColor="{StaticResource BackgroundColor}"
+                      RowSpacing="3"
+                      Padding="5,0,0,0"
+                      HorizontalOptions="FillAndExpand"
+                      >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="Auto" />
@@ -22,33 +24,43 @@
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <Image Source="{Binding imageUrl}"
-                           Grid.Column="0"
-                           Grid.RowSpan="3"
-                           HorizontalOptions="Center"
-                           WidthRequest="80"
-                           HeightRequest="60">
-                    </Image>
-                    <Label Grid.Column="1"
-                           Grid.Row="0"
-                           Padding="0,0,0,0"
-                           Style="{StaticResource EventTitleText}" 
-                           Text="{Binding Title}">
-                    </Label>
-                    <Label Grid.Column="1"
-                           Grid.Row="1"
-                           Grid.ColumnSpan="2"
-                           Padding="0,0,0,0"
-                           Style="{StaticResource EventDataText}" 
-                           Text="{Binding Date}">
-                    </Label>
-                    <Label Grid.Column="1"
-                           Grid.Row="2"
-                           Grid.ColumnSpan="2"
-                           Padding="0,0,0,0"
-                           Style="{StaticResource EventBodyText}" 
-                           Text="{Binding ShortDescription}">
-                    </Label>
+                    <Frame BorderColor="DarkRed" 
+                           CornerRadius="10" 
+                           >
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="{Binding imageUrl}"
+                                    Grid.Column="0"
+                                    Grid.RowSpan="3"
+                                    HorizontalOptions="Start"
+                                    WidthRequest="80"
+                                    HeightRequest="60"
+                                   VerticalOptions="Center">
+                            </Image>
+                            <StackLayout Orientation="Vertical">
+                                <Label Grid.Column="1"
+                                       Grid.Row="0"
+                                       Padding="0,0,0,0"
+                                       Style="{StaticResource EventTitleText}" 
+                                       Text="{Binding Title}">
+                                </Label>
+                                <Label Grid.Column="1"
+                                       Grid.Row="1"
+                                       Grid.ColumnSpan="2"
+                                       Padding="0,0,0,0"
+                                       Style="{StaticResource EventDataText}" 
+                                       Text="{Binding Date}">
+                                </Label>
+                                <Label Grid.Column="1"
+                                       Grid.Row="2"
+                                       Grid.ColumnSpan="2"
+                                       Padding="0,0,0,0"
+                                       Style="{StaticResource EventBodyText}" 
+                                       Text="{Binding ShortDescription}">
+                                </Label>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+
                 </Grid>
             </ViewCell>
         </DataTemplate>
@@ -60,11 +72,13 @@
                       ItemTemplate="{StaticResource EventTemplate}"
                       CachingStrategy="RecycleElement"
                       HasUnevenRows="True"
-                      SelectionMode="Single"
+                      SelectionMode="None"
                       IsPullToRefreshEnabled="True"
                       Refreshing="OnRefresh"
-                      ItemTapped="OnTap">
-                
+                      ItemTapped="OnTap"
+                      SeparatorVisibility="None"
+                      >
+
             </ListView>
         </Grid>
     </ContentPage.Content>

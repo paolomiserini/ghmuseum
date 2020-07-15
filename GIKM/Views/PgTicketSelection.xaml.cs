@@ -28,7 +28,7 @@ namespace GIKM.Views
             this.BindingContext = _singlePayment;
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private void On_PayButtonCLicked(object sender, EventArgs e)
         {
             try
             {

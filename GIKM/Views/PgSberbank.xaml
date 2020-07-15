@@ -4,14 +4,17 @@
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:local="clr-namespace:GIKM.MarkupExtensions"
              mc:Ignorable="d"
              x:Class="GIKM.Views.PgSberbank">
         <StackLayout Margin="20">
             <WebView x:Name="webView" WidthRequest="1000" HeightRequest="1000"></WebView>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Button Text="Back" WidthRequest="100">
-                
+
+            <Button Text="Назад"
+                    Style="{StaticResource SfButtonStyle}"
+                    Clicked="Button_Clicked">
             </Button>
         </StackLayout>
         </StackLayout>

@@ -60,7 +60,7 @@ namespace GIKM.ViewModels
                 case AppConstants.GIKM:
                     for (int i = 0; i < 25; i++)
                     {
-                        Events.Add(new Event { Title = "GIKM prova prova prova prova", ShortDescription = "description long long long long", Date = "01/01/2020-31/12/2020", id = i, imageUrl = "https://img.gettextbooks.com/pi//9781490292878", formType=_pageEventType });
+                        Events.Add(new Event { Title = "GIKM prova prova prova prova", ShortDescription = "description short to tetsting the app with multiline", Date = "01/01/2020-31/12/2020", id = i, imageUrl = "https://img.gettextbooks.com/pi//9781490292878", formType=_pageEventType });
                     }
                     break;
                 default:

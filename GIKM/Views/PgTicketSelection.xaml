@@ -58,14 +58,11 @@
 
                         <StackLayout 
                             HorizontalOptions="Center" Padding="0,10,0,20">
-                            <Image MinimumHeightRequest="100"
-                                   Source="{local:EmbeddedImage GIKM.Images.mastercard-credit-card-80.png}"
-                                   >
-                                <Image.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
-                                </Image.GestureRecognizers>
-                            </Image>
-
+                            <Button Text="Оплатить"
+                                    Style="{StaticResource SfButtonStyle}"
+                                    ImageSource="{local:EmbeddedImage GIKM.Images.mastercard-credit-card-80.png}"
+                                    Clicked="On_PayButtonCLicked">
+                            </Button>
                         </StackLayout>
                     </StackLayout>
                 </Frame>

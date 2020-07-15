@@ -26,11 +26,9 @@
                    CornerRadius="5"
                    Padding="0,0,0,0">
                     <StackLayout>
-                        <yummy:PancakeView BackgroundColor="LightGray"
+                        <yummy:PancakeView BackgroundColor="{StaticResource DarkRedColor}"
                                HasShadow="False"
                                HeightRequest="30"
-                               BackgroundGradientStartColor="DarkRed"
-                               BackgroundGradientEndColor="Red"
                                >
                             <Label Style="{StaticResource SubTitleTextOval}"
                                     HorizontalTextAlignment="Start"

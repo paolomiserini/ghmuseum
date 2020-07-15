@@ -19,7 +19,7 @@ namespace GIKM.Views
             this.imgTop.Source = ImageSource.FromStream(() => new MemoryStream(byteArray));
         }
 
-        private void On_LabelTapped(object sender, EventArgs e)
+        private void On_BtnEventDetailClicked(object sender, EventArgs e)
         {
             // Apre la pagina di pagamento
             var _singlePayment = new PaymentInfo();

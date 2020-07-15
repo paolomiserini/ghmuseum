@@ -107,7 +107,7 @@
             <Setter Property="HeightRequest" Value="40" />
             <Setter Property="CornerRadius" Value="20" />
             <Setter Property="VerticalOptions" Value="Center" />
-            <Setter Property="WidthRequest" Value="150" />
+            <Setter Property="MinimumWidthRequest" Value="150" />
         </Style>
 
  

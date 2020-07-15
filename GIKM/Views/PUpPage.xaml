@@ -28,7 +28,7 @@
                    BackgroundColor="{StaticResource BackgroundColor}" 
                    CornerRadius="20">
             <StackLayout>
-            <yummy:PancakeView BackgroundColor="DarkRed"
+                <yummy:PancakeView BackgroundColor="{StaticResource DarkRedColor}"
                                HasShadow="False"
                                HeightRequest="30"
                                >
