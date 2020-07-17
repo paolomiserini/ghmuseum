@@ -14,6 +14,7 @@
         <Color x:Key="TabBackgroundSelected">#990000</Color>
         <Color x:Key="DarkRedColor">#990000</Color>
         <Color x:Key="EventTitle">#990000</Color>
+        <Color x:Key="ButtonColor">#90A959</Color>
 
         <!-- Application defaults object -->
         <OnPlatform x:Key="TextFontFamily" x:TypeArguments="x:String">
@@ -100,10 +101,11 @@
 
         <!--  Common style for buttons  -->
         <Style x:Key="SfButtonStyle" TargetType="Button">
-            <Setter Property="BackgroundColor" Value="{DynamicResource DarkRedColor}" />
+            <Setter Property="BackgroundColor" Value="{DynamicResource ButtonColor}" />
             <Setter Property="TextColor" Value="{DynamicResource TextWhite}" />
             <Setter Property="FontFamily" Value="{StaticResource TextFontFamily}" />
-            <Setter Property="BorderWidth" Value="0" />
+            <Setter Property="BorderWidth" Value="1" />
+            <Setter Property="BorderColor" Value="Gray" />
             <Setter Property="HeightRequest" Value="40" />
             <Setter Property="CornerRadius" Value="20" />
             <Setter Property="VerticalOptions" Value="Center" />

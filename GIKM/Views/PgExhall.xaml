@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage Padding="0,20,0,0"
-             Title="об Гор. выставочный зал"
+<ContentPage Title="об Гор. выставочный зал"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -10,6 +9,7 @@
              BackgroundColor="{DynamicResource BackgroundColor}"
              mc:Ignorable="d"
              x:Class="GIKM.Views.PgExhall">
+    
 
     <ScrollView>
         <StackLayout VerticalOptions="StartAndExpand"

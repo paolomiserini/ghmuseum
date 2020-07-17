@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage Padding="0,20,0,0"
-             Title="Мероприятий"
+<ContentPage Title="Мероприятий"
+             BackgroundColor="{StaticResource BackgroundColor}"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -9,8 +9,10 @@
              mc:Ignorable="d"
              x:Class="GIKM.Views.PgEventDetail"
              x:Name="EventDetail">
+
     <ScrollView>
-        <StackLayout VerticalOptions="StartAndExpand"
+        <StackLayout Orientation="Vertical"
+                     VerticalOptions="FillAndExpand"
                     BackgroundColor="{DynamicResource BackgroundColor}">
 
             <Image  x:Name="imgTop"
@@ -48,11 +50,13 @@
                         </Label>
 
                         <StackLayout 
-                            HorizontalOptions="Center" Padding="0,10,0,20">
+                            HorizontalOptions="Center"
+                            Padding="0,10,0,20">
                             <Button Text="Купить билеты"
                                     Style="{StaticResource SfButtonStyle}"
                                     ImageSource="{local:EmbeddedImage GIKM.Images.icons8-two-tickets-100.png}"
-                                    Clicked="On_BtnEventDetailClicked">
+                                    Clicked="On_BtnEventDetailClicked"
+                                    Padding="5,5,5,5">
                             </Button>
                         </StackLayout>
                     </StackLayout>

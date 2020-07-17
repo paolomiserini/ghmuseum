@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage Padding="0,20,0,0"
-             Title="Билет"
+<ContentPage Title="Билет"
+             BackgroundColor="{StaticResource BackgroundColor}"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
              xmlns:local="clr-namespace:GIKM.MarkupExtensions"
              mc:Ignorable="d"
              x:Class="GIKM.Views.PgTicketSelection">
     <ScrollView>
-        <StackLayout VerticalOptions="StartAndExpand"
+        <StackLayout VerticalOptions="FillAndExpand"
+                     Orientation="Vertical"
                     BackgroundColor="{DynamicResource BackgroundColor}">
 
             <Image  Aspect="AspectFill"
@@ -32,6 +32,8 @@
                                    Text="{Binding singleDataInfo.Amount}"
                                    Placeholder="цена"
                                    IsEnabled="False"
+                                   TextColor="{StaticResource DarkRedColor}"
+                                   BackgroundColor="{StaticResource BackgroundColor}"
                                    >
                             </Entry>
 
@@ -41,9 +43,11 @@
                                 Padding="5,0,0,0">
                         </Label>
                         <Entry HorizontalTextAlignment="Start"
-                                   Text="{Binding singleDataInfo.Name}"
-                                   Placeholder="имя"
-                                   >
+                               Text="{Binding singleDataInfo.Name}"
+                               TextColor="Black"
+                               Placeholder="имя"
+                               BackgroundColor="{StaticResource BackgroundColor}"
+                               >
                         </Entry>
 
                         <Label Style="{StaticResource SubTitleText}"
@@ -51,9 +55,11 @@
                                 Padding="5,0,0,0">
                         </Label>
                         <Entry HorizontalTextAlignment="Start"
-                                   Text="{Binding singleDataInfo.Surname}"
-                                   Placeholder="фамилия"
-                                   >
+                               Text="{Binding singleDataInfo.Surname}"
+                               TextColor="Black"
+                               Placeholder="фамилия"
+                               BackgroundColor="{StaticResource BackgroundColor}"
+                               >
                         </Entry>
 
                         <StackLayout 
@@ -61,7 +67,8 @@
                             <Button Text="Оплатить"
                                     Style="{StaticResource SfButtonStyle}"
                                     ImageSource="{local:EmbeddedImage GIKM.Images.mastercard-credit-card-80.png}"
-                                    Clicked="On_PayButtonCLicked">
+                                    Clicked="On_PayButtonCLicked"
+                                    Padding="5,5,5,5">
                             </Button>
                         </StackLayout>
                     </StackLayout>

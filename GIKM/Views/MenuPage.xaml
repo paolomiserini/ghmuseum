@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage Padding="0,20,0,0"
-             NavigationPage.HasNavigationBar="false"
+<ContentPage NavigationPage.HasNavigationBar="false"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -9,6 +8,11 @@
              BackgroundColor="{d:DynamicResource BackgroundColor}"
              mc:Ignorable="d"
              x:Class="GIKM.Views.MenuPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0, 20, 0, 0" />
+        </OnPlatform>
+    </ContentPage.Padding>
     <ScrollView>
         <StackLayout Orientation="Vertical"
                  BackgroundColor="{DynamicResource BackgroundColor}"

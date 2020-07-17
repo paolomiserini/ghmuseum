@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage Padding="0,20,0,0"
-             Title="Payment Page"
+<ContentPage Title="Payment Page"
+             BackgroundColor="{StaticResource BackgroundColor}"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -8,13 +8,19 @@
              xmlns:local="clr-namespace:GIKM.MarkupExtensions"
              mc:Ignorable="d"
              x:Class="GIKM.Views.PgSberbank">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0, 20, 0, 0" />
+        </OnPlatform>
+    </ContentPage.Padding>
         <StackLayout Margin="20">
             <WebView x:Name="webView" WidthRequest="1000" HeightRequest="1000"></WebView>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
 
             <Button Text="Назад"
                     Style="{StaticResource SfButtonStyle}"
-                    Clicked="Button_Clicked">
+                    Clicked="Button_Clicked"
+                    Padding="5,5,5,5">
             </Button>
         </StackLayout>
         </StackLayout>
